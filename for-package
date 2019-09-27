@@ -1,0 +1,33 @@
+{
+  "name": "element",
+  "version": "1.0.0",
+  "description": "site Element",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6uJlJl/Element.git"
+  },
+  "author": "Merkulov Alexey mailtomerkulov@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6uJlJl/Element/issues"
+  },
+  "homepage": "https://github.com/6uJlJl/Element#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "imagemin-mozjpeg": "^8.0.0",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {}
+}

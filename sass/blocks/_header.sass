@@ -1,0 +1,143 @@
+.header
+  padding-top: 30px
+  height: 1079px;
+  background: url("../../img/header/header-bg.jpg") no-repeat center
+  background-size: cover
+  &__top
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #CCE9F5;
+  &__logo
+    display: flex
+    img
+      margin-right: 17px
+      width: 69px
+      height: 58px
+  &__company
+    +bold
+    font-size: 29px;
+    line-height: 34px;
+    color: #000000;
+    display: block
+    padding-top: 3px
+  &__descr
+    +normal
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.125em;
+    color: #8D9CA3;
+  &__title
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__h1
+    margin-top: 90px
+    +medium
+    font-size: 33px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #fff
+    margin-bottom: 0
+    padding: 10px 30px
+  &__subtitle
+    +medium
+    font-size: 33px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #fff
+    margin-top: 0
+    padding: 0 30px 10px
+  &__filters
+    margin-top: 90px
+    display: flex
+    justify-content: space-between
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    min-height: 256px
+    align-items: flex-start
+    padding: 15px 70px 46px 120px
+
+
+.callback
+  &__button
+    width: 288px;
+    height: 54px;
+    background: #3DBA29;
+    border: none
+    cursor: pointer
+    +normal;
+    font-size: 21px;
+    line-height: 54px;
+    color: #FFFFFF;
+    padding-left: 94px
+    position: relative
+    margin-left: 66px
+    margin-bottom: 46px
+    &:before
+      position: absolute
+      content: ""
+      width: 43px
+      height: 24px
+      background: url("../../img/header/callback-icon.png") no-repeat center
+      left: 32px
+      top: 16px
+  &__text
+    +medium
+    font-size: 18px;
+    line-height: 21px;
+
+.filters
+  &__left
+    min-width: 200px
+  &__center
+    min-width: 200px
+  &__right
+    +medium
+    font-size: 21px;
+    line-height: 25px;
+    width: 470px
+    align-self: center
+  &__title
+    +medium
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 0
+    margin-bottom: 30px
+  &__radio
+    display: inline-block
+    width: 16px
+    height: 16px
+    border: 1px solid #000000
+    border-radius: 50%
+    font-size: 0
+    position: relative
+    margin-left: 19px
+    margin-right: 14px
+    &:after
+      content: ""
+      position: absolute
+      width: 10px
+      height: 10px
+      background-color: transparent
+      border-radius: 50%
+      left: 2px
+      top: 2px
+  &__item
+    display: flex
+    align-items: center
+    +normal
+    font-size: 18px;
+    line-height: 21px;
+    color: #239CCE;
+    margin-bottom: 14px
+    cursor: pointer
+    input
+      display: none
+      &:checked+.filters__radio:after
+          background-color: #229BCD;
+
+
+
+
+
