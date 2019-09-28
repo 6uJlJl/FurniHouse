@@ -12,8 +12,8 @@
 .item
   &__title
     +medium
-    font-size: 33px;
-    line-height: 39px;
+    font-size: 33px
+    line-height: 39px
     margin-bottom: 18px
   &__descr
     display: flex
@@ -58,44 +58,76 @@
 .descr
   &__material
     +medium
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 20px
+    line-height: 23px
     margin-bottom: 10px
     span
       +normal
-      font-size: 18px;
-      color: #229BCD;
+      font-size: 18px
+      color: #229BCD
       margin-left: 10px
   &__size
     +medium
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 20px
+    line-height: 23px
     span
       +normal
-      font-size: 18px;
-      color: #229BCD;
+      font-size: 18px
+      color: #229BCD
       margin-left: 10px
   &__price
     +medium
-    font-size: 22px;
-    line-height: 23px;
-    margin-top: 19px;
-    margin-left: 111px;
+    font-size: 22px
+    line-height: 23px
+    margin-top: 19px
+    margin-left: 111px
     span
       +normal
-      font-size: 25px;
-      color: #229BCD;
+      font-size: 25px
+      color: #229BCD
       margin-left: 10px
   &__order
-    width: 288px;
-    height: 54px;
-    background: linear-gradient(180deg, #36ADE0 0%, #1D96C8 100%);
+    width: 288px
+    height: 54px
+    background: linear-gradient(180deg, #36ADE0 0%, #1D96C8 100%)
     +normal
-    font-size: 21px;
-    line-height: 25px;
-    color: #FFFFFF;
+    font-size: 21px
+    line-height: 25px
+    color: #FFFFFF
     border: none
     cursor: pointer
+
+.add
+  text-align: center
+  &__title
+    +medium
+    font-size: 33px
+    line-height: 39px
+    padding-top: 15px;
+    margin-bottom: 17px;
+  &__subtitle
+    +normal
+    font-size: 24px
+    line-height: 28px
+    margin-bottom: 76px
+  &__items
+    display: flex
+    margin-left: -17px
+    margin-right: -17px
+  &__item
+    width: 20%
+    margin: 0 17px
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden
+    padding-bottom: 20px
+    img
+      margin-bottom: 15px
+  &__text
+    +normal
+    font-size: 20px
+    line-height: 23px
 
 @media (max-width:992px)
   .item
