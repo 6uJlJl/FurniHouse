@@ -1,7 +1,7 @@
 .design
-
-
+  margin-bottom: 50px
   &__title
+    padding-top: 62px
     text-align: center
     +medium
     font-size: 33px;
@@ -11,13 +11,13 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
-    padding: 26px 240px 40px 78px
+    padding: 38px 240px 40px 78px
     position: relative
     &:after
       content: ""
       position: absolute
       right: 83px
-      top: -80px
+      top: -69px
       width: 71px
       height: 352px
       background: url("../../img/design/roller.png") no-repeat center
@@ -53,10 +53,11 @@
     list-style-type: none
     display: flex
     flex-wrap: wrap
+    margin: 0
   &__item
     padding-left: 71px;
     position: relative;
-    min-height: 51px;
+    height: 51px;
     display: flex;
     align-items: center;
     width: 314px;
@@ -64,6 +65,7 @@
     +normal
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 10px
     &:before
       content: ""
       position: absolute
@@ -85,3 +87,47 @@
       background-image: url("../../img/design/use.png")
     &--cost:before
       background-image: url("../../img/design/cost.png")
+
+@media (max-width: 1200px)
+  .design
+    &__wrapper
+      padding: 40px
+    &__items
+      width: 100%
+      padding-left: 40px
+      flex-direction: column
+
+@media (max-width: 992px)
+  .design
+    &__wrapper
+      flex-direction: column
+      &:after
+        display: none
+    &__title
+      padding-top: 0
+    &__form
+      order: 2
+      width: 338px
+      margin: 0 auto
+      button
+        margin-top: 0
+    &__item
+      width: auto
+      height: auto
+      min-height: 51px
+    &__items
+      margin-bottom: 30px
+
+@media (max-width: 576px)
+  .design
+    &__items
+      padding-left: 0
+    &__item
+      margin-left: 0
+    &__form
+      min-width: 100%
+      width: 100%
+      input
+        width: 100%
+      button
+        width: 100%
