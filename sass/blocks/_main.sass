@@ -115,7 +115,6 @@
     margin-left: -17px
     margin-right: -17px
   &__item
-    width: 20%
     margin: 0 17px
     border: 1px solid #DDDDDD;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
@@ -128,6 +127,37 @@
     +normal
     font-size: 20px
     line-height: 23px
+
+.add--5
+  .add
+    &__item
+      flex-basis: 263px
+
+.add--4
+  .add
+    &__title
+      margin-bottom: 70px
+    &__items
+      justify-content: space-between
+    &__item
+      flex-basis: 330px
+      flex-shrink: 1
+
+
+@media (max-width: 1200px)
+  .add
+    &__items
+      flex-wrap: wrap
+      justify-content: space-around
+    &__item
+      margin-bottom: 34px
+  .add--4
+    .add
+      &__items
+        justify-content: space-around
+      &__item
+        flex-basis: 400px
+
 
 @media (max-width:992px)
   .item
@@ -151,6 +181,12 @@
     &__order
       margin: 0 auto
 
+  .add--4
+    .add
+      &__item
+        flex-basis: 330px
+
+
 @media (max-width:768px)
   .item
     &__title
@@ -172,6 +208,23 @@
       font-size: 18px
       span
         font-size: 20px
+  .add
+    &__title
+      font-size: 30px
+    &__subtitle
+      margin-bottom: 36px
+    &__item
+      flex-basis: 241px;
+  .add--4
+    .add
+      &__title
+        margin-bottom: 36px
+      &__item
+        flex-basis: 296px
+        img
+          height: 192px
+          object-fit: cover
+          object-position: bottom
 
 @media (max-width: 576px)
   .item
@@ -189,3 +242,18 @@
     &__price
       width: 100%
       text-align: center
+  .add
+
+    &__items
+      margin-left: 0
+      margin-right: 0
+    &__item
+      margin-left: 0
+      margin-right: 0
+      flex-basis: 296px;
+      margin-bottom: 20px
+      img
+        height: 150px
+        object-fit: cover
+        object-position: bottom
+
