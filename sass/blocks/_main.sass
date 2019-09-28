@@ -9,7 +9,6 @@
 
 
 .item
-  position: relative
   &__title
     +medium
     font-size: 33px;
@@ -21,19 +20,20 @@
     margin-top: 25px
   &__images
     cursor: pointer
-  &__images:hover~.item__zoom-in,
-  &__images:focus~.item__zoom-in
+    position: relative
+  &__images:hover .item__zoom-in,
+  &__images:focus .item__zoom-in
     display: block
-
   &__left-arrow,
   &__right-arrow
     width: 58px
     height: 58px
     position: absolute
-    top: 47%
+    top: 50%
     background-repeat: no-repeat
     background-position: center
-    transform: translateY(-29px)
+    background-size: cover
+    transform: translateY(-50%)
     cursor: pointer
   &__left-arrow
     background-image: url("../../img/main/left-arrow.png")
@@ -46,10 +46,11 @@
     width: 112px
     height: 112px
     position: absolute
-    top: 48%
+    top: 50%
     left: 50%
-    transform: translate(-56px, -56px)
+    transform: translate(-50%, -50%)
     background: url("../../img/main/zoom-in.png") no-repeat center
+    background-size: cover
   &__zoom-in:hover
     display: block
     cursor: pointer
@@ -94,3 +95,64 @@
     color: #FFFFFF;
     border: none
     cursor: pointer
+
+@media (max-width:992px)
+  .item
+    &__descr
+      flex-wrap: wrap
+    &__left-arrow,
+    &__right-arrow
+      width: 43px
+      height: 43px
+    &__zoom-in
+      width: 84px
+      height: 84px
+  .descr
+    &__left
+      width: 50%
+      flex-grow: 1
+    &__price
+      width: 50%
+      margin-left: 0
+      text-align: right
+    &__order
+      margin: 0 auto
+
+@media (max-width:768px)
+  .item
+    &__title
+      font-size: 25px
+    &__left-arrow,
+    &__right-arrow
+      width: 26px
+      height: 26px
+    &__zoom-in
+      width: 54px
+      height: 54px
+  .descr
+    &__material
+      font-size: 18px
+      margin-right: 10px
+    &__size
+      font-size: 18px
+    &__price
+      font-size: 18px
+      span
+        font-size: 20px
+
+@media (max-width: 576px)
+  .item
+    &__title
+      font-size: 20px
+    &__descr
+      flex-direction: column
+      align-items: center
+  .descr
+    &__left
+      width: 100%
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+    &__price
+      width: 100%
+      text-align: center
