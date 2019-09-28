@@ -1,0 +1,87 @@
+.design
+
+
+  &__title
+    text-align: center
+    +medium
+    font-size: 33px;
+    line-height: 39px;
+  &__wrapper
+    display: flex
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 26px 240px 40px 78px
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      right: 83px
+      top: -80px
+      width: 71px
+      height: 352px
+      background: url("../../img/design/roller.png") no-repeat center
+  &__form
+    min-width: 338px
+    input
+      background: #FFFFFF;
+      border: 1px solid #DDDDDD;
+      +normal
+      width: 100%
+      font-size: 18px;
+      line-height: 21px;
+      padding: 15px 19px
+      height: 51px;
+      color: #A9A9A9;
+      margin-bottom: 24px
+    button
+      text-align: center
+      width: 100%
+      margin-top: 16px
+      height: 54px;
+      background: #3DBA29;
+      +normal
+      font-size: 21px;
+      line-height: 25px;
+      color: #FFFFFF;
+      border: none
+      cursor: pointer
+  &__items
+    flex-grow: 1
+    padding: 0
+    padding-left: 124px
+    list-style-type: none
+    display: flex
+    flex-wrap: wrap
+  &__item
+    padding-left: 71px;
+    position: relative;
+    min-height: 51px;
+    display: flex;
+    align-items: center;
+    width: 314px;
+    margin-left: 20px;
+    +normal
+    font-size: 18px;
+    line-height: 21px;
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      width: 51px
+      height: 51px
+      background-repeat: no-repeat
+      background-position: center
+    &--zamer:before
+      background-image: url("../../img/design/zamer.png")
+    &--proekt:before
+      background-image: url("../../img/design/proekt.png")
+    &--consult:before
+      background-image: url("../../img/design/consult.png")
+    &--demo:before
+      background-image: url("../../img/design/demo.png")
+    &--use:before
+      background-image: url("../../img/design/use.png")
+    &--cost:before
+      background-image: url("../../img/design/cost.png")
