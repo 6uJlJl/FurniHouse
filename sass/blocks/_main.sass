@@ -55,6 +55,14 @@
   &__zoom-in:hover
     display: block
     cursor: pointer
+
+.main__item.add
+  margin-bottom: 93px
+.main__item.add-4
+  padding-top: 1px;
+  margin-bottom: 94px;
+  margin-top: -2px;
+
 .descr
   &__material
     +medium
@@ -115,6 +123,7 @@
     margin-left: -17px
     margin-right: -17px
   &__item
+    flex-basis: 263px
     margin: 0 17px
     border: 1px solid #DDDDDD;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
@@ -128,20 +137,71 @@
     font-size: 20px
     line-height: 23px
 
-.add--5
-  .add
-    &__item
-      flex-basis: 263px
-
 .add--4
   .add
     &__title
-      margin-bottom: 70px
+      margin-bottom: 76px
     &__items
       justify-content: space-between
     &__item
       flex-basis: 330px
       flex-shrink: 1
+
+.add--3
+  .add
+    &__title
+      padding-top: 1px
+      margin-bottom: 79px
+    &__items
+      justify-content: space-between
+    &__stol
+      flex-basis: 460px
+      flex-shrink: 1
+      display: flex
+      border: 1px solid #DDDDDD;
+      box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+      border-radius: 16px;
+      overflow: hidden
+      margin: 0 17px
+      img
+        width: 50%
+        height: 100%
+        object-fit: cover
+    &__right
+      padding: 20px
+
+.right
+  &__title
+    display: inline-block
+    +medium
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase
+    margin-bottom: 49px
+  &__list
+    list-style-type: none
+    text-align: left
+    padding: 0
+    padding-left: 16px
+  &__item
+    +normal
+    font-size: 14px;
+    line-height: 16px;
+    position: relative
+    &:before
+      position: absolute
+      left: -16px
+      top: 3px
+      content: ""
+      display: inline-block
+      width: 8px
+      height: 8px
+      background-color: #259DD0;
+      border-radius: 50%
+      margin-right: 8px
+  &__item+.right__item
+    margin-top: 15px
+
 
 
 @media (max-width: 1200px)
@@ -157,7 +217,12 @@
         justify-content: space-around
       &__item
         flex-basis: 400px
-
+  .add--3
+    .add
+      &__items
+        justify-content: space-around
+      &__stol
+        margin-bottom: 37px
 
 @media (max-width:992px)
   .item
@@ -243,7 +308,6 @@
       width: 100%
       text-align: center
   .add
-
     &__items
       margin-left: 0
       margin-right: 0
@@ -256,4 +320,22 @@
         height: 150px
         object-fit: cover
         object-position: bottom
+  .add--3
+    .add
+      &__title
+        margin-bottom: 36px
+      &__stol
+        flex-basis: 296px
+        flex-direction: column
+        img
+          width: 100%
+          height: 190px
+          object-fit: cover
+          object-position: bottom
+      &__right
+        padding-top: 10px
+  .right
+    &__title
+      margin-bottom: 15px
+
 

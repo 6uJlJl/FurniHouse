@@ -47,4 +47,31 @@ $(document).ready(function(){
     prevArrow: '.kitchen-5~.item__left-arrow'
   });
 
+  $(".kitchen-6").slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '.kitchen-6~.item__right-arrow',
+    prevArrow: '.kitchen-6~.item__left-arrow'
+  });
+
+  $(".kitchen-7").slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '.kitchen-7~.item__right-arrow',
+    prevArrow: '.kitchen-7~.item__left-arrow'
+  });
+
+  $(".kitchen-8").slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '.kitchen-8~.item__right-arrow',
+    prevArrow: '.kitchen-8~.item__left-arrow'
+  });
+
 })
