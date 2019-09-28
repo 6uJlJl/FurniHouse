@@ -1,0 +1,96 @@
+.main
+  margin-top: -203px
+  &__items
+    list-style-type: none
+    margin: 0
+    padding: 0
+    img
+      width: 100%
+
+
+.item
+  position: relative
+  &__title
+    +medium
+    font-size: 33px;
+    line-height: 39px;
+    margin-bottom: 18px
+  &__descr
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+  &__images
+    cursor: pointer
+  &__images:hover~.item__zoom-in,
+  &__images:focus~.item__zoom-in
+    display: block
+
+  &__left-arrow,
+  &__right-arrow
+    width: 58px
+    height: 58px
+    position: absolute
+    top: 47%
+    background-repeat: no-repeat
+    background-position: center
+    transform: translateY(-29px)
+    cursor: pointer
+  &__left-arrow
+    background-image: url("../../img/main/left-arrow.png")
+    left: 15px
+  &__right-arrow
+    background-image: url("../../img/main/right-arrow.png")
+    right: 15px
+  &__zoom-in
+    display: none
+    width: 112px
+    height: 112px
+    position: absolute
+    top: 48%
+    left: 50%
+    transform: translate(-56px, -56px)
+    background: url("../../img/main/zoom-in.png") no-repeat center
+  &__zoom-in:hover
+    display: block
+    cursor: pointer
+.descr
+  &__material
+    +medium
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px
+    span
+      +normal
+      font-size: 18px;
+      color: #229BCD;
+      margin-left: 10px
+  &__size
+    +medium
+    font-size: 20px;
+    line-height: 23px;
+    span
+      +normal
+      font-size: 18px;
+      color: #229BCD;
+      margin-left: 10px
+  &__price
+    +medium
+    font-size: 22px;
+    line-height: 23px;
+    margin-top: 19px;
+    margin-left: 111px;
+    span
+      +normal
+      font-size: 25px;
+      color: #229BCD;
+      margin-left: 10px
+  &__order
+    width: 288px;
+    height: 54px;
+    background: linear-gradient(180deg, #36ADE0 0%, #1D96C8 100%);
+    +normal
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none
+    cursor: pointer
