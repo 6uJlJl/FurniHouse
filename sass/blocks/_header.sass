@@ -119,25 +119,23 @@
     line-height: 21px;
     margin-top: 0
     margin-bottom: 30px
-  &__radio
+  &__checkbox
     display: inline-block
-    width: 16px
-    height: 16px
-    border: 1px solid #000000
-    border-radius: 50%
+    width: 20px
+    height: 20px
     font-size: 0
     position: relative
-    margin-left: 19px
+    margin-left: 25px
     margin-right: 14px
     &:after
       content: ""
       position: absolute
-      width: 10px
-      height: 10px
-      background-color: transparent
-      border-radius: 50%
+      width: 20px
+      height: 20px
+      background: url("../../img/check.jpg") no-repeat;
+      background-position-y: -20px;
       left: 2px
-      top: 2px
+      top: 0
   &__item
     display: flex
     align-items: center
@@ -149,8 +147,8 @@
     cursor: pointer
     input
       display: none
-      &:checked+.filters__radio:after
-          background-color: #229BCD;
+      &:checked+.filters__checkbox:after
+          background-position-y: 0px;
 
 
 
