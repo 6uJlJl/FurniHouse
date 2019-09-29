@@ -1,0 +1,36 @@
+.footer
+  &__wrapper
+    border-top: 1px solid #CCE9F5;
+    padding: 26px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    +normal
+    font-size: 18px;
+    line-height: 21px;
+  &__left
+    margin-right: 20px
+  &__center
+    margin-right: 20px
+  &__right
+    a
+      color: #000000
+      display: block
+      margin-bottom: 15px
+      &:hover,
+      &:focus
+        color: #229acd;
+  &*p
+    margin-bottom: 15px
+
+@media (max-width:768px)
+  .footer
+    &__wrapper
+      justify-content: space-around
+
+@media (max-width:576px)
+  .footer
+    &__wrapper
+      flex-direction: column
+      align-items: center
+      text-align: center

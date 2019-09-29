@@ -1,0 +1,120 @@
+.contacts
+  padding-top: 40px
+  margin-bottom: 79px
+  .container
+    display: flex
+  &__map
+    min-height: 594px
+    width: 571px
+    flex-shrink: 0
+    background: url("../../img/contacts/map.jpg") no-repeat center
+    background-size: cover
+  &__wrapper
+    margin-left: 33px
+  &__title
+    margin-top: 0
+    margin-bottom: 12px;
+    +medium
+    font-size: 33px;
+    line-height: 39px;
+    &--production
+      margin-top: 30px
+  &__list
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+  &__item
+    flex-basis: calc( 50% - 16px )
+    min-width: 400px
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 15px 19px
+    margin: 8px
+    display: flex
+    align-items: center
+  &__item.width-100
+    flex-basis: calc( 100% - 16px )
+    display: flex
+    flex-wrap: wrap
+  &__number
+    +medium
+    font-size: 25px;
+    line-height: 29px;
+    margin-right: 29px
+  &__address
+    +normal
+    font-size: 18px;
+    line-height: 21px;
+  &__central
+    +bold
+    font-size: 18px;
+    line-height: 21px;
+    color: #229ACD;
+    margin-left: 100px
+  &__open
+    +bold
+    font-size: 18px;
+    line-height: 21px;
+    color: #229ACD;
+    margin-left: 10px
+
+
+@media (max-width: 1200px)
+  .contacts
+    &__map
+      flex-basis: 50%
+    &__wrapper
+      flex-basis: 50%
+    &__item
+      flex-basis: calc( 100% - 16px )
+    &__central
+      margin-left: 45px
+      margin-top: 10px
+      display: block
+      text-align: left
+
+@media (max-width: 992px)
+  .contacts
+    .container
+      flex-direction: column
+    &__map
+      margin: 0 auto
+      margin-bottom: 30px
+      flex-basis: 100%
+      width: 100%
+    &__wrapper
+      margin-left: 0
+      flex-basis: 100%
+    &__title
+      text-align: center
+
+@media (max-width: 768px)
+  .contacts
+    &__item.width-100
+      padding-bottom: 36px
+      position: relative
+      flex-wrap: nowrap
+    &__central
+      position: absolute
+      bottom: 15px
+      left: 17px
+
+@media (max-width: 576px)
+  .contacts
+    &__map
+      min-height: 226px
+    &__title
+      font-size: 30px;
+    &__address
+      font-size: 16px;
+    &__item
+      min-width: 300px
+    &__item--open
+      position: relative
+      padding-bottom: 36px
+    &__open
+      position: absolute
+      bottom: 15px
+      left: 52px
