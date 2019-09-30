@@ -1,9 +1,11 @@
 .main
   margin-top: -203px
   &__items
+    display: flex
+    flex-direction: column
     list-style-type: none
     margin: 0
-    padding: 0
+    padding: 0 100px
     img
       width: 100%
   &__item
@@ -25,23 +27,10 @@
   &__images:hover .item__zoom-in,
   &__images:focus .item__zoom-in
     display: block
-  &__left-arrow,
-  &__right-arrow
-    width: 58px
-    height: 58px
-    position: absolute
-    top: 50%
-    background-repeat: no-repeat
-    background-position: center
-    background-size: cover
-    transform: translateY(-50%)
-    cursor: pointer
-  &__left-arrow
-    background-image: url("../../img/main/left-arrow.png")
-    left: 15px
-  &__right-arrow
-    background-image: url("../../img/main/right-arrow.png")
-    right: 15px
+  &__image
+    width: 100%
+    max-height: 600px
+    object-fit: cover
   &__zoom-in
     display: none
     width: 112px
@@ -64,6 +53,8 @@
   margin-top: -2px;
 
 .descr
+  &__left
+    flex-basis: 25%
   &__material
     +medium
     font-size: 20px
@@ -82,18 +73,18 @@
       +normal
       font-size: 18px
       color: #229BCD
-      margin-left: 10px
+      display: block
   &__price
     +medium
     font-size: 22px
     line-height: 23px
     margin-top: 19px
-    margin-left: 111px
     span
       +normal
       font-size: 25px
       color: #229BCD
       margin-left: 10px
+      font-weight: bold;
   &__order
     width: 288px
     height: 54px
@@ -134,7 +125,9 @@
       margin-bottom: 15px
   &__text
     +normal
-    font-size: 20px
+    padding-left: 5px
+    padding-right: 5px
+    font-size: 18px
     line-height: 23px
 
 .add--4
@@ -162,19 +155,19 @@
       box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
       border-radius: 16px;
       overflow: hidden
-      margin: 0 17px
+      margin: 0 10px
       img
         width: 50%
         height: 100%
         object-fit: cover
     &__right
-      padding: 20px
+      padding: 20px 10px;
 
 .right
   &__title
     display: inline-block
     +medium
-    font-size: 18px;
+    font-size: 15px;
     line-height: 21px;
     text-transform: uppercase
     margin-bottom: 49px
@@ -205,26 +198,23 @@
 
 
 @media (max-width: 1200px)
+  .main
+    &__image
+      max-height: 450px
   .add
     &__items
       flex-wrap: wrap
       justify-content: space-around
     &__item
       margin-bottom: 34px
-  .add--4
-    .add
-      &__items
-        justify-content: space-around
-      &__item
-        flex-basis: 400px
+      flex-basis: 200px
+
   .add--3
     .add
       &__items
         justify-content: space-around
       &__stol
         margin-bottom: 37px
-
-@media (max-width:992px)
   .item
     &__descr
       flex-wrap: wrap
@@ -245,14 +235,35 @@
       text-align: right
     &__order
       margin: 0 auto
-
+    &__size
+      span
+        display: inline
+        margin-left: 10px
+        flex-basis: 330px
+  .right
+    &__title
+      font-size: 18px
   .add--4
     .add
+      &__items
+        justify-content: space-around
+      &__title
+        margin-bottom: 36px
       &__item
-        flex-basis: 330px
+        flex-basis: 296px
+        img
+          height: 192px
+          object-fit: cover
+          object-position: bottom
+
+@media (max-width: 992px)
+  .main
+    &__items
+      padding: 0
 
 
 @media (max-width:768px)
+
   .item
     &__title
       font-size: 25px
@@ -280,16 +291,7 @@
       margin-bottom: 36px
     &__item
       flex-basis: 241px;
-  .add--4
-    .add
-      &__title
-        margin-bottom: 36px
-      &__item
-        flex-basis: 296px
-        img
-          height: 192px
-          object-fit: cover
-          object-position: bottom
+
 
 @media (max-width: 576px)
   .item
@@ -333,7 +335,7 @@
           object-fit: cover
           object-position: bottom
       &__right
-        padding-top: 10px
+        padding: 10px 20px 20px
   .right
     &__title
       margin-bottom: 15px

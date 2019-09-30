@@ -36,25 +36,25 @@
       <section class="header__filters">
         <div class="filters__left">
           <h2 class="filters__title">Выберете материал:</h2>
-          <label class="filters__item">
+          <label class="filters__item" data-filter="massiv">
             <img src="img/header/material-1.jpg" alt="">
             <input type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             Массив
           </label>
-          <label class="filters__item">
+          <label class="filters__item" data-filter="mdf">
             <img src="img/header/material-2.jpg" alt="">
             <input type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             МДФ
           </label>
-          <label class="filters__item">
+          <label class="filters__item" data-filter="plastic">
             <img src="img/header/material-3.jpg" alt="">
             <input type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             Пластик
           </label>
-          <label class="filters__item">
+          <label class="filters__item" data-filter="emal">
             <img src="img/header/material-4.jpg" alt="">
             <input type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
@@ -63,13 +63,13 @@
         </div>
         <div class="filters__center">
           <h2 class="filters__title">Выберете стиль:</h2>
-          <label class="filters__item">
+          <label class="filters__item" data-filter="classic">
             <img src="img/header/style-1.jpg" alt="">
             <input type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             Классика
           </label>
-          <label class="filters__item">
+          <label class="filters__item" data-filter="modern">
             <img src="img/header/style-2.jpg" alt="">
             <input type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
@@ -87,10 +87,11 @@
 
         <li class="main__item massiv classic">
           <article class="item">
-            <h2 class="item__title">Массив Blue Sky</h2>
+            <h2 class="item__title">Сан-Франциско</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="01-san-francisko" href="img/main/massiv/01-san-francisko/1.JPG" title="Массив Blue Sky">
-                <img data-src="img/main/massiv/01-san-francisko/1.JPG" alt="Массив Blue Sky">
+                <img  class="item__image" data-src="img/main/massiv/01-san-francisko/1.JPG" alt="Массив Blue Sky">
+                <div class="item__zoom-in"></div>
               </a>
               <div class="hidden">
                 <a class="fancybox" data-fancybox="01-san-francisko" href="img/main/massiv/01-san-francisko/2.JPG" title="Массив Blue Sky">
@@ -109,7 +110,7 @@
                   <img data-src="img/main/massiv/01-san-francisko/6.JPG" alt="Массив Blue Sky">
                 </a>
               </div>
-              <div class="item__zoom-in"></div>
+
             </div>
             <div class="item__descr">
               <div class="descr__left">
@@ -124,10 +125,11 @@
         </li>
         <li class="main__item massiv classic">
           <article class="item">
-            <h2 class="item__title">Массив Фисташка</h2>
+            <h2 class="item__title">Равелло</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/1.jpg" title="Массив Фисташка">
-                <img data-src="img/main/massiv/02-ravello/1.jpg" alt="Массив Фисташка">
+                <img  class="item__image"  data-src="img/main/massiv/02-ravello/1.jpg" alt="Массив Фисташка">
+                <div class="item__zoom-in"></div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/2.jpg" title="Массив Фисташка">
@@ -140,7 +142,6 @@
                     <img data-src="img/main/massiv/02-ravello/4.jpg" alt="Массив Фисташка">
                   </a>
               </div>
-              <div class="item__zoom-in"></div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
@@ -156,10 +157,11 @@
         </li>
         <li class="main__item massiv classic">
           <article class="item">
-            <h2 class="item__title">Массив с патиной Орех</h2>
+            <h2 class="item__title">Колорадо</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="03-colorado" href="img/main/massiv/03-colorado/1.JPG" title="Массив с патиной Орех">
-                <img data-src="img/main/massiv/03-colorado/1.JPG" alt="Массив с патиной Орех">
+                <img  class="item__image" data-src="img/main/massiv/03-colorado/1.JPG" alt="Массив с патиной Орех">
+                <div class="item__zoom-in"></div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="03-colorado" href="img/main/massiv/03-colorado/2.JPG" title="Массив с патиной Орех">
@@ -181,7 +183,6 @@
                     <img data-src="img/main/massiv/03-colorado/7.JPG" alt="Массив с патиной Орех">
                   </a>
               </div>
-              <div class="item__zoom-in"></div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
@@ -197,10 +198,11 @@
         </li>
         <li class="main__item massiv classic">
           <article class="item">
-            <h2 class="item__title">Зеленый дуб с патиной серебро</h2>
+            <h2 class="item__title">Дели</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/1.JPG" title="Зеленый дуб с патиной серебро">
-                <img data-src="img/main/massiv/04-deli/1.JPG" alt="Зеленый дуб с патиной серебро">
+                <img class="item__image" data-src="img/main/massiv/04-deli/1.JPG" alt="Зеленый дуб с патиной серебро">
+                <div class="item__zoom-in"></div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/2.JPG" title="Зеленый дуб с патиной серебро">
@@ -213,7 +215,7 @@
                     <img data-src="img/main/massiv/04-deli/4.JPG" alt="Зеленый дуб с патиной серебро">
                   </a>
               </div>
-              <div class="item__zoom-in"></div>
+
             </div>
             <div class="item__descr">
               <div class="descr__left">
@@ -227,12 +229,409 @@
             </div>
           </article>
         </li>
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Женева</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="05-jeneva" href="img/main/massiv/05-jeneva/1.JPG" title="Дуб Diana Exp Bage">
+                <img class="item__image" data-src="img/main/massiv/05-jeneva/1.JPG" alt="Дуб Diana Exp Bage">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="05-jeneva" href="img/main/massiv/05-jeneva/2.JPG" title="Дуб Diana Exp Bage">
+                    <img data-src="img/main/massiv/05-jeneva/2.JPG" alt="Дуб Diana Exp Bage">
+                  </a>
+                  <a class="fancybox" data-fancybox="05-jeneva" href="img/main/massiv/05-jeneva/3.JPG" title="Дуб Diana Exp Bage">
+                    <img data-src="img/main/massiv/05-jeneva/3.JPG" alt="Дуб Diana Exp Bage">
+                  </a>
+                  <a class="fancybox" data-fancybox="05-jeneva" href="img/main/massiv/05-jeneva/4.JPG" title="Дуб Diana Exp Bage">
+                    <img data-src="img/main/massiv/05-jeneva/4.JPG" alt="Дуб Diana Exp Bage">
+                  </a>
+              </div>
+
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>42 950 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Рим</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="06-rim" href="img/main/massiv/06-rim/1.JPG" title="Рим">
+                <img class="item__image" data-src="img/main/massiv/06-rim/1.JPG" alt="Рим">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="06-rim" href="img/main/massiv/06-rim/2.JPG" title="Рим">
+                    <img data-src="img/main/massiv/06-rim/2.JPG" alt="Рим">
+                  </a>
+                  <a class="fancybox" data-fancybox="06-rim" href="img/main/massiv/06-rim/3.JPG" title="Рим">
+                    <img data-src="img/main/massiv/06-rim/3.JPG" alt="Рим">
+                  </a>
+                  <a class="fancybox" data-fancybox="06-rim" href="img/main/massiv/06-rim/4.JPG" title="Рим">
+                    <img data-src="img/main/massiv/06-rim/4.JPG" alt="Рим">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>42 950 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Цюрих</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/1.jpg" title="Дуб Ruggeri White+T9">
+                <img class="item__image" data-src="img/main/massiv/07-curih/1.jpg" alt="Дуб Ruggeri White+T9">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/2.jpg" title="Дуб Ruggeri White+T9">
+                    <img data-src="img/main/massiv/07-curih/2.jpg" alt="Дуб Ruggeri White+T9">
+                  </a>
+                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/3.jpg" title="Дуб Ruggeri White+T9">
+                    <img data-src="img/main/massiv/07-curih/3.jpg" alt="Дуб Ruggeri White+T9">
+                  </a>
+                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/4.jpg" title="Дуб Ruggeri White+T9">
+                    <img data-src="img/main/massiv/07-curih/4.jpg" alt="Дуб Ruggeri White+T9">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Шоколад</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Бергонци</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/1.jpg" title="Дуб Bergonzi Beige gold">
+                <img class="item__image" data-src="img/main/massiv/08-bergonci/1.jpg" alt="Дуб Bergonzi Beige gold">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/2.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/2.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/3.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/3.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/4.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/4.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/5.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/5.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/6.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/6.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 950 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Муреш</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="09-muresh" href="img/main/massiv/09-muresh/1.jpg" title="Дуб Nike Avorio black gold">
+                <img class="item__image" data-src="img/main/massiv/09-muresh/1.jpg" alt="Дуб Nike Avorio black gold">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="09-muresh" href="img/main/massiv/09-muresh/2.jpg" title="Дуб Nike Avorio black gold">
+                    <img data-src="img/main/massiv/09-muresh/2.jpg" alt="Дуб Nike Avorio black gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="09-muresh" href="img/main/massiv/09-muresh/3.jpg" title="Дуб Nike Avorio black gold">
+                    <img data-src="img/main/massiv/09-muresh/3.jpg" alt="Дуб Nike Avorio black gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="09-muresh" href="img/main/massiv/09-muresh/4.jpg" title="Дуб Nike Avorio black gold">
+                    <img data-src="img/main/massiv/09-muresh/4.jpg" alt="Дуб Nike Avorio black gold">
+                  </a>
+
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Черный</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Копенгаген</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/1.jpg" title="Дуб Diana Exp Beige">
+                <img class="item__image" data-src="img/main/massiv/10-kopengagen/1.jpg" alt="Дуб Diana Exp Beige">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/2.jpg" title="Дуб Diana Exp Beige">
+                    <img data-src="img/main/massiv/10-kopengagen/2.jpg" alt="Дуб Diana Exp Beige">
+                  </a>
+                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/3.jpg" title="Дуб Diana Exp Beige">
+                    <img data-src="img/main/massiv/10-kopengagen/3.jpg" alt="Дуб Diana Exp Beige">
+                  </a>
+                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/4.jpg" title="Дуб Diana Exp Beige">
+                    <img data-src="img/main/massiv/10-kopengagen/4.jpg" alt="Дуб Diana Exp Beige">
+                  </a>
+                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/5.jpg" title="Дуб Diana Exp Beige">
+                    <img data-src="img/main/massiv/10-kopengagen/5.jpg" alt="Дуб Diana Exp Beige">
+                  </a>
+
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Черный</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 970 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Руджери -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Руджери</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="11-rudgery" href="img/main/massiv/11-rudgery/1.jpg" title="Дуб Ruggeri Beige Wood Ral">
+                <img class="item__image" data-src="img/main/massiv/11-rudgery/1.jpg" alt="Дуб Ruggeri Beige Wood Ral">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="11-rudgery" href="img/main/massiv/11-rudgery/2.jpg" title="Дуб Ruggeri Beige Wood Ral">
+                    <img data-src="img/main/massiv/11-rudgery/2.jpg" alt="Дуб Ruggeri Beige Wood Ral">
+                  </a>
+                  <a class="fancybox" data-fancybox="11-rudgery" href="img/main/massiv/11-rudgery/3.jpg" title="Дуб Ruggeri Beige Wood Ral">
+                    <img data-src="img/main/massiv/11-rudgery/3.jpg" alt="Дуб Ruggeri Beige Wood Ral">
+                  </a>
+                  <a class="fancybox" data-fancybox="11-rudgery" href="img/main/massiv/11-rudgery/4.jpg" title="Дуб Ruggeri Beige Wood Ral">
+                    <img data-src="img/main/massiv/11-rudgery/4.jpg" alt="Дуб Ruggeri Beige Wood Ral">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Шоколадный</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Оушен -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Оушен</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/1.JPG" title="Массив Blue Sky">
+                <img class="item__image" data-src="img/main/massiv/12-oushen/1.JPG" alt="Массив Blue Sky">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/2.JPG" title="Массив Blue Sky">
+                    <img data-src="img/main/massiv/12-oushen/2.JPG" alt="Массив Blue Sky">
+                  </a>
+                  <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/3.JPG" title="Массив Blue Sky">
+                    <img data-src="img/main/massiv/12-oushen/3.JPG" alt="Массив Blue Sky">
+                  </a>
+                  <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/4.JPG" title="Массив Blue Sky">
+                    <img data-src="img/main/massiv/12-oushen/4.JPG" alt="Массив Blue Sky">
+                  </a>
+                  <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/5.JPG" title="Массив Blue Sky">
+                    <img data-src="img/main/massiv/12-oushen/5.JPG" alt="Массив Blue Sky">
+                  </a>
+                  <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/6.JPG" title="Массив Blue Sky">
+                    <img data-src="img/main/massiv/12-oushen/6.JPG" alt="Массив Blue Sky">
+                  </a>
+                  <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/7.JPG" title="Массив Blue Sky">
+                    <img data-src="img/main/massiv/12-oushen/7.JPG" alt="Массив Blue Sky">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Голубой</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>42 950 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Эдеса -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Эдеса</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/1.jpg" title="Дуб Bergonzi beige gold">
+                <img class="item__image" data-src="img/main/massiv/13-edesa/1.jpg" alt="Дуб Bergonzi beige gold">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/2.jpg" title="Дуб Bergonzi beige gold">
+                    <img data-src="img/main/massiv/13-edesa/2.jpg" alt="Дуб Bergonzi beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/3.jpg" title="Дуб Bergonzi beige gold">
+                    <img data-src="img/main/massiv/13-edesa/3.jpg" alt="Дуб Bergonzi beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/4.jpg" title="Дуб Bergonzi beige gold">
+                    <img data-src="img/main/massiv/13-edesa/4.jpg" alt="Дуб Bergonzi beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/5.jpg" title="Дуб Bergonzi beige gold">
+                    <img data-src="img/main/massiv/13-edesa/5.jpg" alt="Дуб Bergonzi beige gold">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Женева -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Женева</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/1.JPG" title="Массив Classic White">
+                <img class="item__image" data-src="img/main/massiv/14-jeneva/1.JPG" alt="Массив Classic White">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/2.JPG" title="Массив Classic White">
+                    <img data-src="img/main/massiv/14-jeneva/2.JPG" alt="Массив Classic White">
+                  </a>
+                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/3.JPG" title="Массив Classic White">
+                    <img data-src="img/main/massiv/14-jeneva/3.JPG" alt="Массив Classic White">
+                  </a>
+                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/4.JPG" title="Массив Classic White">
+                    <img data-src="img/main/massiv/14-jeneva/4.JPG" alt="Массив Classic White">
+                  </a>
+                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/5.JPG" title="Массив Classic White">
+                    <img data-src="img/main/massiv/14-jeneva/5.JPG" alt="Массив Classic White">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>39 650 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Катерини -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Катерини</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/1.jpg" title="Дуб + Ольха Mila Beige gold">
+                <img class="item__image" data-src="img/main/massiv/15-katerini/1.jpg" alt="Дуб + Ольха Mila Beige gold">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/2.jpg" title="Дуб + Ольха Mila Beige gold">
+                    <img data-src="img/main/massiv/15-katerini/2.jpg" alt="Дуб + Ольха Mila Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/3.jpg" title="Дуб + Ольха Mila Beige gold">
+                    <img data-src="img/main/massiv/15-katerini/3.jpg" alt="Дуб + Ольха Mila Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/4.jpg" title="Дуб + Ольха Mila Beige gold">
+                    <img data-src="img/main/massiv/15-katerini/4.jpg" alt="Дуб + Ольха Mila Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/5.jpg" title="Дуб + Ольха Mila Beige gold">
+                    <img data-src="img/main/massiv/15-katerini/5.jpg" alt="Дуб + Ольха Mila Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/6.jpg" title="Дуб + Ольха Mila Beige gold">
+                    <img data-src="img/main/massiv/15-katerini/6.jpg" alt="Дуб + Ольха Mila Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/7.jpg" title="Дуб + Ольха Mila Beige gold">
+                    <img data-src="img/main/massiv/15-katerini/7.jpg" alt="Дуб + Ольха Mila Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/8.jpg" title="Дуб + Ольха Mila Beige gold">
+                    <img data-src="img/main/massiv/15-katerini/8.jpg" alt="Дуб + Ольха Mila Beige gold">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>53 900 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
         <li class="main__item plastic modern">
           <article class="item">
-            <h2 class="item__title">Пластик Бордо</h2>
+            <h2 class="item__title">Сан-Диего</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/1.JPG" title="Пластик Бордо">
-                <img data-src="img/main/plastic/01-san-diego/1.JPG" alt="Пластик Бордо">
+                <img class="item__image" data-src="img/main/plastic/01-san-diego/1.JPG" alt="Пластик Бордо">
+                <div class="item__zoom-in"></div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/2.JPG" title="Пластик Бордо">
@@ -244,8 +643,7 @@
                   <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/4.JPG" title="Пластик Бордо">
                     <img data-src="img/main/plastic/01-san-diego/4.JPG" alt="Пластик Бордо">
                   </a>
-              </div>
-              <div class="item__zoom-in"></div>
+                </div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
@@ -261,17 +659,17 @@
         </li>
         <li class="main__item plastic modern">
           <article class="item">
-            <h2 class="item__title">Белый пластик</h2>
+            <h2 class="item__title">Мон-Реаль</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="02-mon-real" href="img/main/plastic/02-mon-real/1.jpg" title="Белый пластик">
-                <img data-src="img/main/plastic/02-mon-real/1.jpg" alt="Белый пластик">
+                <img class="item__image" data-src="img/main/plastic/02-mon-real/1.jpg" alt="Белый пластик">
+                <div class="item__zoom-in"></div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="02-mon-real" href="img/main/plastic/02-mon-real/2.JPG" title="Белый пластик">
                     <img data-src="img/main/plastic/02-mon-real/2.JPG" alt="Белый пластик">
                   </a>
               </div>
-              <div class="item__zoom-in"></div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
@@ -287,10 +685,11 @@
         </li>
         <li class="main__item plastic modern">
           <article class="item">
-            <h2 class="item__title">Пластик ‡абрано</h2>
+            <h2 class="item__title">Валенсия</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="03-valencia" href="img/main/plastic/03-valencia/1.JPG" title="Џластик ‡абрано">
-                <img data-src="img/main/plastic/03-valencia/1.JPG" alt="Џластик ‡абрано">
+                <img class="item__image" data-src="img/main/plastic/03-valencia/1.JPG" alt="Џластик ‡абрано">
+                <div class="item__zoom-in"></div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="03-valencia" href="img/main/plastic/03-valencia/2.JPG" title="Џластик ‡абрано">
@@ -312,7 +711,6 @@
                     <img data-src="img/main/plastic/03-valencia/7.JPG" alt="Џластик ‡абрано">
                   </a>
               </div>
-              <div class="item__zoom-in"></div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
@@ -322,6 +720,53 @@
                 <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
               </div>
               <p class="descr__price">Цена за метр:<span>16 350 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <li class="main__item plastic modern">
+          <article class="item">
+            <h2 class="item__title">Люцерн</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="04-lucern" href="img/main/plastic/04-lucern/1.jpg" title="Пластик Коффе">
+                <img class="item__image" data-src="img/main/plastic/04-lucern/1.jpg" alt="Пластик Коффе">
+                <div class="item__zoom-in"></div>
+              </a>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Пластик</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Шоколадный</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
+              <button class="descr__order">Заказать рассчет</button>
+            </div>
+          </article>
+        </li>
+        <li class="main__item plastic modern">
+          <article class="item">
+            <h2 class="item__title">Анталья</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="08-antalya" href="img/main/plastic/08-antalya/1.jpg" title="Анталья">
+                <img class="item__image" data-src="img/main/plastic/08-antalya/1.jpg" alt="Анталья">
+                <div class="item__zoom-in"></div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="08-antalya" href="img/main/plastic/08-antalya/2.jpg" title="Анталья">
+                    <img data-src="img/main/plastic/08-antalya/2.jpg" alt="Анталья">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Пластик</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+              </div>
+              <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
               <button class="descr__order">Заказать рассчет</button>
             </div>
           </article>
@@ -378,7 +823,7 @@
             </div>
           </article>
         </li>
-        <li class="main__item">
+        <li class="main__item add-3">
           <article class="add add--3">
             <h2 class="add__title">Столешницы разного плана:</h2>
             <div class="add__items">
@@ -452,32 +897,32 @@
         <ul class="contacts__list">
           <li class="contacts__item width-100">
             <span class="contacts__number">1</span>
-            <span class="contacts__address">ТЦ Город - корпус “Leroy Merlin”<br>Рязанский проспект, 2, к. 3, эт. 4</span>
+            <span class="contacts__address">ТЦ Город - корпус “Leroy Merlin”<br>Рязанский проспект,&nbsp;2, к.&nbsp;3, эт.&nbsp;4</span>
             <span class="contacts__central">Центральный салон</span>
           </li>
           <li class="contacts__item">
             <span class="contacts__number">2</span>
-            <span class="contacts__address">ТЦ Империя,<br>Дмитровское шоссе, 161Б, эт. 4</span>
+            <span class="contacts__address">ТЦ Империя,<br>Дмитровское&nbsp;шоссе,&nbsp;161Б, эт.&nbsp;4</span>
           </li>
           <li class="contacts__item">
             <span class="contacts__number">3</span>
-            <span class="contacts__address">ТЦ Шмель - “Центр Мебели”<br>Подольск, пр. Пролетарский, 10, эт. 5</span>
+            <span class="contacts__address">ТЦ Шмель - “Центр Мебели”<br>Подольск, пр.&nbsp;Пролетарский,&nbsp;10, эт.&nbsp;5</span>
           </li>
           <li class="contacts__item">
             <span class="contacts__number">4</span>
-            <span class="contacts__address">ТЦ МебельГрад<br>Генерала Белова, 35, эт. 3</span>
+            <span class="contacts__address">ТЦ МебельГрад<br>Генерала&nbsp;Белова,&nbsp;35, эт.&nbsp;3</span>
           </li>
           <li class="contacts__item">
             <span class="contacts__number">5</span>
-            <span class="contacts__address">ТД Щелково<br>Щелково, пр. Пролетарский, 10, эт. 5</span>
+            <span class="contacts__address">ТД Щелково<br>Щелково, пр.&nbsp;Пролетарский,&nbsp;10, эт.&nbsp;5</span>
           </li>
           <li class="contacts__item">
             <span class="contacts__number">6</span>
-            <span class="contacts__address">ТЦ МебельГуд<br>Ногинск, Горьковское ш. 52-й км</span>
+            <span class="contacts__address">ТЦ МебельГуд<br>Ногинск, Горьковское&nbsp;ш.&nbsp;52-й&nbsp;км</span>
           </li>
           <li class="contacts__item contacts__item--open">
             <span class="contacts__number">7</span>
-            <span class="contacts__address">ТЦ МебельГуд<span class="contacts__open">Скоро открытие</span><br>Ногинск, Горьковское ш. 52-й км</span>
+            <span class="contacts__address">ТЦ МебельГуд<span class="contacts__open">Скоро открытие</span><br>Ногинск, Горьковское&nbsp;ш.&nbsp;52-й&nbsp;км</span>
           </li>
         </ul>
         <h2 class="contacts__title contacts__title--production">Адрес производства</h2>
@@ -509,7 +954,7 @@
     </div>
   </footer>
 
-  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/blazy.min.js"></script>
   <script src="js/main.js" defer></script>

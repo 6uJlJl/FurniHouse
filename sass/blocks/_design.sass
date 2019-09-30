@@ -11,18 +11,18 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
-    padding: 38px 240px 40px 78px
+    padding: 38px 115px 40px 78px
     position: relative
     &:after
       content: ""
       position: absolute
-      right: 83px
+      right: 40px
       top: -69px
       width: 71px
       height: 352px
       background: url("../../img/design/roller.png") no-repeat center
   &__form
-    min-width: 338px
+    min-width: 30%
     input
       background: #FFFFFF;
       border: 1px solid #DDDDDD;
@@ -49,7 +49,7 @@
   &__items
     flex-grow: 1
     padding: 0
-    padding-left: 124px
+    padding-left: 60px
     list-style-type: none
     display: flex
     flex-wrap: wrap
@@ -57,15 +57,16 @@
   &__item
     padding-left: 71px;
     position: relative;
-    height: 51px;
+    min-height: 51px;
     display: flex;
-    align-items: center;
-    width: 314px;
+    align-items: flex-start;
+    width: 46%;
     margin-left: 20px;
     +normal
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 10px
+    margin-top: 5px
+    margin-bottom: 5px
     &:before
       content: ""
       position: absolute
