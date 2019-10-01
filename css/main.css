@@ -422,7 +422,7 @@ body {
   position: absolute;
   bottom: 15px;
   right: 10px;
-  background: rgba(27, 198, 0, 0.5);
+  background: rgba(101, 101, 101, 0.5);
   color: White;
   font-size: 18px;
   padding: 20px 10px;
@@ -438,7 +438,7 @@ body {
     height: 30px;
     background: url("../../img/main/shots.png") no-repeat center; }
   .item__shots:hover {
-    background: rgba(27, 198, 0, 0.7);
+    background: rgba(101, 101, 101, 0.7);
     transition: color background-color 0.3s; }
 
 .main__item.add {
@@ -876,8 +876,7 @@ body {
     min-height: 594px;
     width: 30%;
     flex-shrink: 0;
-    background: url("../../img/contacts/map.jpg") no-repeat center;
-    background-size: cover; }
+    background: white; }
   .contacts__wrapper {
     margin-left: 33px; }
   .contacts__title {
@@ -1056,13 +1055,15 @@ body {
     width: 100%;
     margin-top: 16px;
     height: 54px;
-    background: #3dba29;
+    background: #3dba29 !important;
     font-family: 'Roboto-Regular', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 25px;
     color: #FFFFFF;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 0 !important;
+    -webkit-appearance: none; }
     .popup-callback__button:hover, .popup-callback__button:focus {
       background-color: #30981f; }
 
