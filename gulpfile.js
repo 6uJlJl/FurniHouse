@@ -14,6 +14,7 @@ function style() {
 		.pipe(postcss([
 			autoprefixer()
     ]))
+    .pipe(gulp.dest('css'))
     .pipe(cleanCSS())
     .pipe(rename({
       basename: 'main',

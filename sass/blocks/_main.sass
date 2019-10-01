@@ -44,7 +44,29 @@
   &__zoom-in:hover
     display: block
     cursor: pointer
-
+  &__shots
+    display: block
+    position: absolute
+    bottom: 15px
+    right: 10px
+    background: rgba(27, 198, 0, 0.5)
+    color: White
+    font-size: 18px
+    padding: 20px 10px
+    padding-left: 50px
+    transition: background-color 0.3s
+    &:before
+      content: ""
+      position: absolute
+      left: 10px
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background: url("../../img/main/shots.png") no-repeat center
+    &:hover
+      background: rgba(27, 198, 0, 0.7)
+      transition: color background-color 0.3s
 .main__item.add
   margin-bottom: 93px
 .main__item.add-4
@@ -59,7 +81,7 @@
     +medium
     font-size: 20px
     line-height: 23px
-    margin-bottom: 10px
+    margin-bottom: 0px
     span
       +normal
       font-size: 18px
@@ -88,13 +110,17 @@
   &__order
     width: 288px
     height: 54px
-    background: linear-gradient(180deg, #36ADE0 0%, #1D96C8 100%)
+    background: #3dba29;
     +normal
     font-size: 21px
     line-height: 25px
     color: #FFFFFF
     border: none
     cursor: pointer
+    outline: none
+    &:hover,
+    &:focus
+      background-color: #30981f
 
 .add
   text-align: center
@@ -218,6 +244,7 @@
   .item
     &__descr
       flex-wrap: wrap
+      margin-top: 10px
     &__left-arrow,
     &__right-arrow
       width: 43px
@@ -235,6 +262,7 @@
       text-align: right
     &__order
       margin: 0 auto
+      margin-top: 10px
     &__size
       span
         display: inline
@@ -300,6 +328,10 @@
     &__descr
       flex-direction: column
       align-items: center
+    &__shots
+      font-size: 15px
+      padding: 10px
+      padding-left: 50px
   .descr
     &__left
       width: 100%
@@ -309,6 +341,12 @@
     &__price
       width: 100%
       text-align: center
+    &__material
+      display: block
+      width: 100%
+      text-align: center
+    &__size
+      text-align: center
   .add
     &__items
       margin-left: 0
@@ -316,12 +354,11 @@
     &__item
       margin-left: 0
       margin-right: 0
-      flex-basis: 296px;
+      flex-basis: 263px;
       margin-bottom: 20px
       img
         height: 150px
-        object-fit: cover
-        object-position: bottom
+        object-fit: contain
   .add--3
     .add
       &__title

@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="stylesheet" href="/css/main.css">
   <title>Furni House фабрика мебели</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -21,10 +22,10 @@
           </p>
         </div>
         <div class="header__callback">
-          <span class="callback__text">
+          <a class="callback__text" href="#callback" rel="nofollow">
             Заказать обратный звонок
           </span>
-          <button class="callback__button">8 (495) 105-07-50</button>
+          <a class="callback__button" href="tel:+74951050750" >8 (495) 105-07-50</a>
 
         </div>
       </div>
@@ -36,42 +37,42 @@
       <section class="header__filters">
         <div class="filters__left">
           <h2 class="filters__title">Выберете материал:</h2>
-          <label class="filters__item" data-filter="massiv">
+          <label class="filters__item">
             <img src="img/header/material-1.jpg" alt="">
-            <input type="checkbox" name="filter-left" checked>
+            <input id="massiv" type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             Массив
           </label>
-          <label class="filters__item" data-filter="mdf">
+          <label class="filters__item">
             <img src="img/header/material-2.jpg" alt="">
-            <input type="checkbox" name="filter-left" checked>
+            <input id="mdf" type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             МДФ
           </label>
-          <label class="filters__item" data-filter="plastic">
+          <label class="filters__item">
             <img src="img/header/material-3.jpg" alt="">
-            <input type="checkbox" name="filter-left" checked>
+            <input id="plastic" type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             Пластик
           </label>
-          <label class="filters__item" data-filter="emal">
+          <label class="filters__item">
             <img src="img/header/material-4.jpg" alt="">
-            <input type="checkbox" name="filter-left" checked>
+            <input id="emal" type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             Эмаль
           </label>
         </div>
         <div class="filters__center">
           <h2 class="filters__title">Выберете стиль:</h2>
-          <label class="filters__item" data-filter="classic">
+          <label class="filters__item">
             <img src="img/header/style-1.jpg" alt="">
-            <input type="checkbox" name="filter-left" checked>
+            <input id="classic" type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             Классика
           </label>
-          <label class="filters__item" data-filter="modern">
+          <label class="filters__item">
             <img src="img/header/style-2.jpg" alt="">
-            <input type="checkbox" name="filter-left" checked>
+            <input id="modern" type="checkbox" name="filter-left" checked>
             <span class="filters__checkbox"></span>
             Модерн
           </label>
@@ -84,14 +85,16 @@
   <main class="main">
     <div class="container">
       <ul class="main__items">
-
+        <!-- Сан-Франциско -->
         <li class="main__item massiv classic">
           <article class="item">
             <h2 class="item__title">Сан-Франциско</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="01-san-francisko" href="img/main/massiv/01-san-francisko/1.JPG" title="Массив Blue Sky">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img  class="item__image" data-src="img/main/massiv/01-san-francisko/1.JPG" alt="Массив Blue Sky">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                 <a class="fancybox" data-fancybox="01-san-francisko" href="img/main/massiv/01-san-francisko/2.JPG" title="Массив Blue Sky">
@@ -110,58 +113,69 @@
                   <img data-src="img/main/massiv/01-san-francisko/6.JPG" alt="Массив Blue Sky">
                 </a>
               </div>
-
             </div>
             <div class="item__descr">
               <div class="descr__left">
                 <p class="descr__material">Материал:<span>Дуб</span></p>
                 <p class="descr__material">Стиль:<span>Классика</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>42 950 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
-        <li class="main__item massiv classic">
+        <!-- Монреаль -->
+        <li class="main__item mdf modern">
           <article class="item">
-            <h2 class="item__title">Равелло</h2>
+            <h2 class="item__title">Монреаль</h2>
             <div class="item__images ">
-              <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/1.jpg" title="Массив Фисташка">
-                <img  class="item__image"  data-src="img/main/massiv/02-ravello/1.jpg" alt="Массив Фисташка">
+              <a class="fancybox" data-fancybox="08-monreal" href="img/main/mdf/08-monreal/1.JPG" title="МДФ Modern Nature">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/08-monreal/1.JPG" alt="МДФ Modern Nature">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
-                  <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/2.jpg" title="Массив Фисташка">
-                    <img data-src="img/main/massiv/02-ravello/2.jpg" alt="Массив Фисташка">
-                  </a>
-                  <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/3.jpg" title="Массив Фисташка">
-                    <img data-src="img/main/massiv/02-ravello/3.jpg" alt="Массив Фисташка">
-                  </a>
-                  <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/4.jpg" title="Массив Фисташка">
-                    <img data-src="img/main/massiv/02-ravello/4.jpg" alt="Массив Фисташка">
-                  </a>
+                <a class="fancybox" data-fancybox="08-monreal" href="img/main/mdf/08-monreal/2.JPG" title="МДФ Modern Nature">
+                  <img data-src="img/main/mdf/08-monreal/2.JPG" alt="МДФ Modern Nature">
+                </a>
+                <a class="fancybox" data-fancybox="08-monreal" href="img/main/mdf/08-monreal/3.JPG" title="МДФ Modern Nature">
+                  <img data-src="img/main/mdf/08-monreal/3.JPG" alt="МДФ Modern Nature">
+                </a>
+                <a class="fancybox" data-fancybox="08-monreal" href="img/main/mdf/08-monreal/4.JPG" title="МДФ Modern Nature">
+                  <img data-src="img/main/mdf/08-monreal/4.JPG" alt="МДФ Modern Nature">
+                </a>
+                <a class="fancybox" data-fancybox="08-monreal" href="img/main/mdf/08-monreal/5.JPG" title="МДФ Modern Nature">
+                  <img data-src="img/main/mdf/08-monreal/5.JPG" alt="МДФ Modern Nature">
+                </a>
+                <a class="fancybox" data-fancybox="08-monreal" href="img/main/mdf/08-monreal/6.JPG" title="МДФ Modern Nature">
+                  <img data-src="img/main/mdf/08-monreal/6.JPG" alt="МДФ Modern Nature">
+                </a>
               </div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
-                <p class="descr__material">Материал:<span>Дуб</span></p>
-                <p class="descr__material">Стиль:<span>Классика</span></p>
-                <p class="descr__material">Цвет:<span>Фисташковый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Камень</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
-              <p class="descr__price">Цена за метр:<span>39 650 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
+        <!-- Колорадо -->
         <li class="main__item massiv classic">
           <article class="item">
             <h2 class="item__title">Колорадо</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="03-colorado" href="img/main/massiv/03-colorado/1.JPG" title="Массив с патиной Орех">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img  class="item__image" data-src="img/main/massiv/03-colorado/1.JPG" alt="Массив с патиной Орех">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="03-colorado" href="img/main/massiv/03-colorado/2.JPG" title="Массив с патиной Орех">
@@ -189,53 +203,47 @@
                 <p class="descr__material">Материал:<span>Дуб с патиной Орех</span></p>
                 <p class="descr__material">Стиль:<span>Классика</span></p>
                 <p class="descr__material">Цвет:<span>Кофе с молоком</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>39 650 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
-        <li class="main__item massiv classic">
+        <!-- Люцерн -->
+        <li class="main__item plastic modern">
           <article class="item">
-            <h2 class="item__title">Дели</h2>
+            <h2 class="item__title">Люцерн</h2>
             <div class="item__images ">
-              <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/1.JPG" title="Зеленый дуб с патиной серебро">
-                <img class="item__image" data-src="img/main/massiv/04-deli/1.JPG" alt="Зеленый дуб с патиной серебро">
+              <a class="fancybox" data-fancybox="04-lucern" href="img/main/plastic/04-lucern/1.jpg" title="Пластик Коффе">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/plastic/04-lucern/1.jpg" alt="Пластик Коффе">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
-              <div class="hidden">
-                  <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/2.JPG" title="Зеленый дуб с патиной серебро">
-                    <img data-src="img/main/massiv/04-deli/2.JPG" alt="Зеленый дуб с патиной серебро">
-                  </a>
-                  <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/3.JPG" title="Зеленый дуб с патиной серебро">
-                    <img data-src="img/main/massiv/04-deli/3.JPG" alt="Зеленый дуб с патиной серебро">
-                  </a>
-                  <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/4.JPG" title="Зеленый дуб с патиной серебро">
-                    <img data-src="img/main/massiv/04-deli/4.JPG" alt="Зеленый дуб с патиной серебро">
-                  </a>
-              </div>
-
             </div>
             <div class="item__descr">
               <div class="descr__left">
-                <p class="descr__material">Материал:<span>Зеленый дуб с патиной</span></p>
-                <p class="descr__material">Стиль:<span>Классика</span></p>
-                <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <p class="descr__material">Материал:<span>Пластик</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Шоколадный</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
-              <p class="descr__price">Цена за метр:<span>39 650 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
+        <!-- Женева -->
         <li class="main__item massiv classic">
           <article class="item">
             <h2 class="item__title">Женева</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="05-jeneva" href="img/main/massiv/05-jeneva/1.JPG" title="Дуб Diana Exp Bage">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/massiv/05-jeneva/1.JPG" alt="Дуб Diana Exp Bage">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="05-jeneva" href="img/main/massiv/05-jeneva/2.JPG" title="Дуб Diana Exp Bage">
@@ -255,20 +263,70 @@
                 <p class="descr__material">Материал:<span>Массив</span></p>
                 <p class="descr__material">Стиль:<span>Классика</span></p>
                 <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>42 950 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
+        <!-- Гавана -->
+        <li class="main__item emal modern">
+          <article class="item">
+            <h2 class="item__title">Гавана</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="03-gavana" href="img/main/emal/03-gavana/1.JPG" title="Эмаль Seasand">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/emal/03-gavana/1.JPG" alt="Эмаль Seasand">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="03-gavana" href="img/main/emal/03-gavana/2.JPG" title="Эмаль Seasand">
+                  <img data-src="img/main/emal/03-gavana/2.JPG" alt="Эмаль Seasand">
+                </a>
+                <a class="fancybox" data-fancybox="03-gavana" href="img/main/emal/03-gavana/3.JPG" title="Эмаль Seasand">
+                  <img data-src="img/main/emal/03-gavana/3.JPG" alt="Эмаль Seasand">
+                </a>
+                <a class="fancybox" data-fancybox="03-gavana" href="img/main/emal/03-gavana/4.JPG" title="Эмаль Seasand">
+                  <img data-src="img/main/emal/03-gavana/4.JPG" alt="Эмаль Seasand">
+                </a>
+                <a class="fancybox" data-fancybox="03-gavana" href="img/main/emal/03-gavana/5.JPG" title="Эмаль Seasand">
+                  <img data-src="img/main/emal/03-gavana/5.JPG" alt="Эмаль Seasand">
+                </a>
+                <a class="fancybox" data-fancybox="03-gavana" href="img/main/emal/03-gavana/6.JPG" title="Эмаль Seasand">
+                  <img data-src="img/main/emal/03-gavana/6.JPG" alt="Эмаль Seasand">
+                </a>
+                <a class="fancybox" data-fancybox="03-gavana" href="img/main/emal/03-gavana/7.JPG" title="Эмаль Seasand">
+                  <img data-src="img/main/emal/03-gavana/7.JPG" alt="Эмаль Seasand">
+                </a>
+                <a class="fancybox" data-fancybox="03-gavana" href="img/main/emal/03-gavana/8.JPG" title="Эмаль Seasand">
+                  <img data-src="img/main/emal/03-gavana/8.JPG" alt="Эмаль Seasand">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Эмаль</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Голубой</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>21 550 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Рим -->
         <li class="main__item massiv classic">
           <article class="item">
             <h2 class="item__title">Рим</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="06-rim" href="img/main/massiv/06-rim/1.JPG" title="Рим">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/massiv/06-rim/1.JPG" alt="Рим">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="06-rim" href="img/main/massiv/06-rim/2.JPG" title="Рим">
@@ -287,90 +345,23 @@
                 <p class="descr__material">Материал:<span>Массив</span></p>
                 <p class="descr__material">Стиль:<span>Классика</span></p>
                 <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>42 950 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
-        <li class="main__item massiv classic">
-          <article class="item">
-            <h2 class="item__title">Цюрих</h2>
-            <div class="item__images ">
-              <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/1.jpg" title="Дуб Ruggeri White+T9">
-                <img class="item__image" data-src="img/main/massiv/07-curih/1.jpg" alt="Дуб Ruggeri White+T9">
-                <div class="item__zoom-in"></div>
-              </a>
-              <div class="hidden">
-                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/2.jpg" title="Дуб Ruggeri White+T9">
-                    <img data-src="img/main/massiv/07-curih/2.jpg" alt="Дуб Ruggeri White+T9">
-                  </a>
-                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/3.jpg" title="Дуб Ruggeri White+T9">
-                    <img data-src="img/main/massiv/07-curih/3.jpg" alt="Дуб Ruggeri White+T9">
-                  </a>
-                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/4.jpg" title="Дуб Ruggeri White+T9">
-                    <img data-src="img/main/massiv/07-curih/4.jpg" alt="Дуб Ruggeri White+T9">
-                  </a>
-              </div>
-            </div>
-            <div class="item__descr">
-              <div class="descr__left">
-                <p class="descr__material">Материал:<span>Массив</span></p>
-                <p class="descr__material">Стиль:<span>Классика</span></p>
-                <p class="descr__material">Цвет:<span>Шоколад</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
-              </div>
-              <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
-            </div>
-          </article>
-        </li>
-        <li class="main__item massiv classic">
-          <article class="item">
-            <h2 class="item__title">Бергонци</h2>
-            <div class="item__images ">
-              <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/1.jpg" title="Дуб Bergonzi Beige gold">
-                <img class="item__image" data-src="img/main/massiv/08-bergonci/1.jpg" alt="Дуб Bergonzi Beige gold">
-                <div class="item__zoom-in"></div>
-              </a>
-              <div class="hidden">
-                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/2.jpg" title="Дуб Bergonzi Beige gold">
-                    <img data-src="img/main/massiv/08-bergonci/2.jpg" alt="Дуб Bergonzi Beige gold">
-                  </a>
-                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/3.jpg" title="Дуб Bergonzi Beige gold">
-                    <img data-src="img/main/massiv/08-bergonci/3.jpg" alt="Дуб Bergonzi Beige gold">
-                  </a>
-                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/4.jpg" title="Дуб Bergonzi Beige gold">
-                    <img data-src="img/main/massiv/08-bergonci/4.jpg" alt="Дуб Bergonzi Beige gold">
-                  </a>
-                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/5.jpg" title="Дуб Bergonzi Beige gold">
-                    <img data-src="img/main/massiv/08-bergonci/5.jpg" alt="Дуб Bergonzi Beige gold">
-                  </a>
-                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/6.jpg" title="Дуб Bergonzi Beige gold">
-                    <img data-src="img/main/massiv/08-bergonci/6.jpg" alt="Дуб Bergonzi Beige gold">
-                  </a>
-              </div>
-            </div>
-            <div class="item__descr">
-              <div class="descr__left">
-                <p class="descr__material">Материал:<span>Массив</span></p>
-                <p class="descr__material">Стиль:<span>Классика</span></p>
-                <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
-              </div>
-              <p class="descr__price">Цена за метр:<span>41 950 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
-            </div>
-          </article>
-        </li>
+        <!-- Муреш -->
         <li class="main__item massiv classic">
           <article class="item">
             <h2 class="item__title">Муреш</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="09-muresh" href="img/main/massiv/09-muresh/1.jpg" title="Дуб Nike Avorio black gold">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/massiv/09-muresh/1.jpg" alt="Дуб Nike Avorio black gold">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="09-muresh" href="img/main/massiv/09-muresh/2.jpg" title="Дуб Nike Avorio black gold">
@@ -390,46 +381,42 @@
                 <p class="descr__material">Материал:<span>Массив</span></p>
                 <p class="descr__material">Стиль:<span>Классика</span></p>
                 <p class="descr__material">Цвет:<span>Черный</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
-        <li class="main__item massiv classic">
+        <!-- Сант-Мориц -->
+        <li class="main__item mdf modern">
           <article class="item">
-            <h2 class="item__title">Копенгаген</h2>
+            <h2 class="item__title">Сант-Мориц</h2>
             <div class="item__images ">
-              <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/1.jpg" title="Дуб Diana Exp Beige">
-                <img class="item__image" data-src="img/main/massiv/10-kopengagen/1.jpg" alt="Дуб Diana Exp Beige">
+              <a class="fancybox" data-fancybox="20-sant-moriz" href="img/main/mdf/20-sant-moriz/1.JPG" title="Сант-Мориц">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/20-sant-moriz/1.JPG" alt="Сант-Мориц">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
-                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/2.jpg" title="Дуб Diana Exp Beige">
-                    <img data-src="img/main/massiv/10-kopengagen/2.jpg" alt="Дуб Diana Exp Beige">
-                  </a>
-                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/3.jpg" title="Дуб Diana Exp Beige">
-                    <img data-src="img/main/massiv/10-kopengagen/3.jpg" alt="Дуб Diana Exp Beige">
-                  </a>
-                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/4.jpg" title="Дуб Diana Exp Beige">
-                    <img data-src="img/main/massiv/10-kopengagen/4.jpg" alt="Дуб Diana Exp Beige">
-                  </a>
-                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/5.jpg" title="Дуб Diana Exp Beige">
-                    <img data-src="img/main/massiv/10-kopengagen/5.jpg" alt="Дуб Diana Exp Beige">
-                  </a>
-
+                <a class="fancybox" data-fancybox="20-sant-moriz" href="img/main/mdf/20-sant-moriz/2.JPG" title="Сант-Мориц">
+                  <img data-src="img/main/mdf/20-sant-moriz/2.JPG" alt="Сант-Мориц">
+                </a>
+                <a class="fancybox" data-fancybox="20-sant-moriz" href="img/main/mdf/20-sant-moriz/3.JPG" title="Сант-Мориц">
+                  <img data-src="img/main/mdf/20-sant-moriz/3.JPG" alt="Сант-Мориц">
+                </a>
               </div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
-                <p class="descr__material">Материал:<span>Массив</span></p>
-                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
                 <p class="descr__material">Цвет:<span>Черный</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
-              <p class="descr__price">Цена за метр:<span>41 970 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
@@ -439,8 +426,10 @@
             <h2 class="item__title">Руджери</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="11-rudgery" href="img/main/massiv/11-rudgery/1.jpg" title="Дуб Ruggeri Beige Wood Ral">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/massiv/11-rudgery/1.jpg" alt="Дуб Ruggeri Beige Wood Ral">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="11-rudgery" href="img/main/massiv/11-rudgery/2.jpg" title="Дуб Ruggeri Beige Wood Ral">
@@ -459,10 +448,83 @@
                 <p class="descr__material">Материал:<span>Массив</span></p>
                 <p class="descr__material">Стиль:<span>Классика</span></p>
                 <p class="descr__material">Цвет:<span>Шоколадный</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Джуно -->
+        <li class="main__item mdf modern">
+          <article class="item">
+            <h2 class="item__title">Джуно</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="10-dguno" href="img/main/mdf/10-dguno/1.JPG" title="МДФ Fantasy">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/10-dguno/1.JPG" alt="МДФ Fantasy">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="10-dguno" href="img/main/mdf/10-dguno/2.JPG" title="МДФ Fantasy">
+                  <img data-src="img/main/mdf/10-dguno/2.JPG" alt="МДФ Fantasy">
+                </a>
+                <a class="fancybox" data-fancybox="10-dguno" href="img/main/mdf/10-dguno/3.JPG" title="МДФ Fantasy">
+                  <img data-src="img/main/mdf/10-dguno/3.JPG" alt="МДФ Fantasy">
+                </a>
+                <a class="fancybox" data-fancybox="10-dguno" href="img/main/mdf/10-dguno/4.JPG" title="МДФ Fantasy">
+                  <img data-src="img/main/mdf/10-dguno/4.JPG" alt="МДФ Fantasy">
+                </a>
+                <a class="fancybox" data-fancybox="10-dguno" href="img/main/mdf/10-dguno/5.JPG" title="МДФ Fantasy">
+                  <img data-src="img/main/mdf/10-dguno/5.JPG" alt="МДФ Fantasy">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Узор</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Сент-Люсия -->
+        <li class="main__item mdf classic">
+          <article class="item">
+            <h2 class="item__title">Сент-Люсия</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="12-sent-lucia" href="img/main/mdf/12-sent-lucia/1.JPG" title="МДФ Flower">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/12-sent-lucia/1.JPG" alt="МДФ Flower">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="12-sent-lucia" href="img/main/mdf/12-sent-lucia/2.JPG" title="МДФ Flower">
+                  <img data-src="img/main/mdf/12-sent-lucia/2.JPG" alt="МДФ Flower">
+                </a>
+                <a class="fancybox" data-fancybox="12-sent-lucia" href="img/main/mdf/12-sent-lucia/3.JPG" title="МДФ Flower">
+                  <img data-src="img/main/mdf/12-sent-lucia/3.JPG" alt="МДФ Flower">
+                </a>
+                <a class="fancybox" data-fancybox="12-sent-lucia" href="img/main/mdf/12-sent-lucia/4.JPG" title="МДФ Flower">
+                  <img data-src="img/main/mdf/12-sent-lucia/4.JPG" alt="МДФ Flower">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Дерево</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
@@ -472,8 +534,10 @@
             <h2 class="item__title">Оушен</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/1.JPG" title="Массив Blue Sky">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/massiv/12-oushen/1.JPG" alt="Массив Blue Sky">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="12-oushen" href="img/main/massiv/12-oushen/2.JPG" title="Массив Blue Sky">
@@ -501,82 +565,45 @@
                 <p class="descr__material">Материал:<span>Массив</span></p>
                 <p class="descr__material">Стиль:<span>Классика</span></p>
                 <p class="descr__material">Цвет:<span>Голубой</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>42 950 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
-        <!-- Эдеса -->
-        <li class="main__item massiv classic">
+        <!-- Сан-Диего -->
+        <li class="main__item plastic modern">
           <article class="item">
-            <h2 class="item__title">Эдеса</h2>
+            <h2 class="item__title">Сан-Диего</h2>
             <div class="item__images ">
-              <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/1.jpg" title="Дуб Bergonzi beige gold">
-                <img class="item__image" data-src="img/main/massiv/13-edesa/1.jpg" alt="Дуб Bergonzi beige gold">
+              <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/1.JPG" title="Пластик Бордо">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/plastic/01-san-diego/1.JPG" alt="Пластик Бордо">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
-                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/2.jpg" title="Дуб Bergonzi beige gold">
-                    <img data-src="img/main/massiv/13-edesa/2.jpg" alt="Дуб Bergonzi beige gold">
+                  <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/2.JPG" title="Пластик Бордо">
+                    <img data-src="img/main/plastic/01-san-diego/2.JPG" alt="Пластик Бордо">
                   </a>
-                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/3.jpg" title="Дуб Bergonzi beige gold">
-                    <img data-src="img/main/massiv/13-edesa/3.jpg" alt="Дуб Bergonzi beige gold">
+                  <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/3.JPG" title="Пластик Бордо">
+                    <img data-src="img/main/plastic/01-san-diego/3.JPG" alt="Пластик Бордо">
                   </a>
-                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/4.jpg" title="Дуб Bergonzi beige gold">
-                    <img data-src="img/main/massiv/13-edesa/4.jpg" alt="Дуб Bergonzi beige gold">
+                  <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/4.JPG" title="Пластик Бордо">
+                    <img data-src="img/main/plastic/01-san-diego/4.JPG" alt="Пластик Бордо">
                   </a>
-                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/5.jpg" title="Дуб Bergonzi beige gold">
-                    <img data-src="img/main/massiv/13-edesa/5.jpg" alt="Дуб Bergonzi beige gold">
-                  </a>
-              </div>
+                </div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
-                <p class="descr__material">Материал:<span>Массив</span></p>
-                <p class="descr__material">Стиль:<span>Классика</span></p>
-                <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <p class="descr__material">Материал:<span>Пластик</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Шоколадный</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
-              <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
-            </div>
-          </article>
-        </li>
-        <!-- Женева -->
-        <li class="main__item massiv classic">
-          <article class="item">
-            <h2 class="item__title">Женева</h2>
-            <div class="item__images ">
-              <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/1.JPG" title="Массив Classic White">
-                <img class="item__image" data-src="img/main/massiv/14-jeneva/1.JPG" alt="Массив Classic White">
-                <div class="item__zoom-in"></div>
-              </a>
-              <div class="hidden">
-                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/2.JPG" title="Массив Classic White">
-                    <img data-src="img/main/massiv/14-jeneva/2.JPG" alt="Массив Classic White">
-                  </a>
-                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/3.JPG" title="Массив Classic White">
-                    <img data-src="img/main/massiv/14-jeneva/3.JPG" alt="Массив Classic White">
-                  </a>
-                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/4.JPG" title="Массив Classic White">
-                    <img data-src="img/main/massiv/14-jeneva/4.JPG" alt="Массив Classic White">
-                  </a>
-                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/5.JPG" title="Массив Classic White">
-                    <img data-src="img/main/massiv/14-jeneva/5.JPG" alt="Массив Classic White">
-                  </a>
-              </div>
-            </div>
-            <div class="item__descr">
-              <div class="descr__left">
-                <p class="descr__material">Материал:<span>Массив</span></p>
-                <p class="descr__material">Стиль:<span>Классика</span></p>
-                <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
-              </div>
-              <p class="descr__price">Цена за метр:<span>39 650 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
@@ -586,8 +613,10 @@
             <h2 class="item__title">Катерини</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/1.jpg" title="Дуб + Ольха Mila Beige gold">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/massiv/15-katerini/1.jpg" alt="Дуб + Ольха Mila Beige gold">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="15-katerini" href="img/main/massiv/15-katerini/2.jpg" title="Дуб + Ольха Mila Beige gold">
@@ -618,52 +647,61 @@
                 <p class="descr__material">Материал:<span>Массив</span></p>
                 <p class="descr__material">Стиль:<span>Классика</span></p>
                 <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>53 900 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
-        <li class="main__item plastic modern">
+        <!-- Гаргальяни -->
+        <li class="main__item mdf classic">
           <article class="item">
-            <h2 class="item__title">Сан-Диего</h2>
+            <h2 class="item__title">Гаргальяни</h2>
             <div class="item__images ">
-              <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/1.JPG" title="Пластик Бордо">
-                <img class="item__image" data-src="img/main/plastic/01-san-diego/1.JPG" alt="Пластик Бордо">
+              <a class="fancybox" data-fancybox="01-gargalyani" href="img/main/mdf/01-gargalyani/1.jpg" title="Classic White">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/01-gargalyani/1.jpg" alt="Classic White">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
-                  <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/2.JPG" title="Пластик Бордо">
-                    <img data-src="img/main/plastic/01-san-diego/2.JPG" alt="Пластик Бордо">
+                  <a class="fancybox" data-fancybox="01-gargalyani" href="img/main/mdf/01-gargalyani/2.jpg" title="Classic White">
+                    <img data-src="img/main/mdf/01-gargalyani/2.jpg" alt="Classic White">
                   </a>
-                  <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/3.JPG" title="Пластик Бордо">
-                    <img data-src="img/main/plastic/01-san-diego/3.JPG" alt="Пластик Бордо">
+                  <a class="fancybox" data-fancybox="01-gargalyani" href="img/main/mdf/01-gargalyani/3.jpg" title="Classic White">
+                    <img data-src="img/main/mdf/01-gargalyani/3.jpg" alt="Classic White">
                   </a>
-                  <a class="fancybox" data-fancybox="01-san-diego" href="img/main/plastic/01-san-diego/4.JPG" title="Пластик Бордо">
-                    <img data-src="img/main/plastic/01-san-diego/4.JPG" alt="Пластик Бордо">
+                  <a class="fancybox" data-fancybox="01-gargalyani" href="img/main/mdf/01-gargalyani/4.jpg" title="Classic White">
+                    <img data-src="img/main/mdf/01-gargalyani/4.jpg" alt="Classic White">
                   </a>
-                </div>
+                  <a class="fancybox" data-fancybox="01-gargalyani" href="img/main/mdf/01-gargalyani/5.jpg" title="Classic White">
+                    <img data-src="img/main/mdf/01-gargalyani/5.jpg" alt="Classic White">
+                  </a>
+              </div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
-                <p class="descr__material">Материал:<span>Пластик</span></p>
-                <p class="descr__material">Стиль:<span>Модерн</span></p>
-                <p class="descr__material">Цвет:<span>Шоколадный</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
-              <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
+        <!-- Мон-Реаль -->
         <li class="main__item plastic modern">
           <article class="item">
             <h2 class="item__title">Мон-Реаль</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="02-mon-real" href="img/main/plastic/02-mon-real/1.jpg" title="Белый пластик">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/plastic/02-mon-real/1.jpg" alt="Белый пластик">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="02-mon-real" href="img/main/plastic/02-mon-real/2.JPG" title="Белый пластик">
@@ -676,20 +714,641 @@
                 <p class="descr__material">Материал:<span>Пластик</span></p>
                 <p class="descr__material">Стиль:<span>Модерн</span></p>
                 <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>16 350 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
+        <!-- Клермон-Ферран -->
+        <li class="main__item mdf classic">
+          <article class="item">
+            <h2 class="item__title">Клермон-Ферран</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="02-klermon" href="img/main/mdf/02-klermon/1.JPG" title="Клермон-Ферран">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/02-klermon/1.JPG" alt="Клермон-Ферран">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="02-klermon" href="img/main/mdf/02-klermon/2.JPG" title="Клермон-Ферран">
+                    <img data-src="img/main/mdf/02-klermon/2.JPG" alt="Клермон-Ферран">
+                  </a>
+                  <a class="fancybox" data-fancybox="02-klermon" href="img/main/mdf/02-klermon/3.JPG" title="Клермон-Ферран">
+                    <img data-src="img/main/mdf/02-klermon/3.JPG" alt="Клермон-Ферран">
+                  </a>
+                  <a class="fancybox" data-fancybox="02-klermon" href="img/main/mdf/02-klermon/4.JPG" title="Клермон-Ферран">
+                    <img data-src="img/main/mdf/02-klermon/4.JPG" alt="Клермон-Ферран">
+                  </a>
+                  <a class="fancybox" data-fancybox="02-klermon" href="img/main/mdf/02-klermon/5.JPG" title="Клермон-Ферран">
+                    <img data-src="img/main/mdf/02-klermon/5.JPG" alt="Клермон-Ферран">
+                  </a>
+                  <a class="fancybox" data-fancybox="02-klermon" href="img/main/mdf/02-klermon/6.JPG" title="Клермон-Ферран">
+                    <img data-src="img/main/mdf/02-klermon/6.JPG" alt="Клермон-Ферран">
+                  </a>
+                  <a class="fancybox" data-fancybox="02-klermon" href="img/main/mdf/02-klermon/7.JPG" title="Клермон-Ферран">
+                    <img data-src="img/main/mdf/02-klermon/7.JPG" alt="Клермон-Ферран">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Оушенсайд -->
+        <li class="main__item mdf modern">
+          <article class="item">
+            <h2 class="item__title">Оушенсайд</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="19-oushensaid" href="img/main/mdf/19-oushensaid/1.JPG" title="Кухня МДФ">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/19-oushensaid/1.JPG" alt="Кухня МДФ">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="19-oushensaid" href="img/main/mdf/19-oushensaid/2.JPG" title="Кухня МДФ">
+                  <img data-src="img/main/mdf/19-oushensaid/2.JPG" alt="Кухня МДФ">
+                </a>
+                <a class="fancybox" data-fancybox="19-oushensaid" href="img/main/mdf/19-oushensaid/3.JPG" title="Кухня МДФ">
+                  <img data-src="img/main/mdf/19-oushensaid/3.JPG" alt="Кухня МДФ">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Фиолетовый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Рейкьявик -->
+        <li class="main__item mdf classic">
+          <article class="item">
+            <h2 class="item__title">Рейкьявик</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="06-rejkyavik" href="img/main/mdf/06-rejkyavik/1.JPG" title="Империя Пленка 2">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/06-rejkyavik/1.JPG" alt="Империя Пленка 2">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="06-rejkyavik" href="img/main/mdf/06-rejkyavik/2.JPG" title="Империя Пленка 2">
+                    <img data-src="img/main/mdf/06-rejkyavik/2.JPG" alt="Империя Пленка 2">
+                  </a>
+                  <a class="fancybox" data-fancybox="06-rejkyavik" href="img/main/mdf/06-rejkyavik/3.JPG" title="Империя Пленка 2">
+                    <img data-src="img/main/mdf/06-rejkyavik/3.JPG" alt="Империя Пленка 2">
+                  </a>
+                  <a class="fancybox" data-fancybox="06-rejkyavik" href="img/main/mdf/06-rejkyavik/4.JPG" title="Империя Пленка 2">
+                    <img data-src="img/main/mdf/06-rejkyavik/4.JPG" alt="Империя Пленка 2">
+                  </a>
+                  <a class="fancybox" data-fancybox="06-rejkyavik" href="img/main/mdf/06-rejkyavik/5.JPG" title="Империя Пленка 2">
+                    <img data-src="img/main/mdf/06-rejkyavik/5.JPG" alt="Империя Пленка 2">
+                  </a>
+                  <a class="fancybox" data-fancybox="06-rejkyavik" href="img/main/mdf/06-rejkyavik/6.JPG" title="Империя Пленка 2">
+                    <img data-src="img/main/mdf/06-rejkyavik/6.JPG" alt="Империя Пленка 2">
+                  </a>
+                  <a class="fancybox" data-fancybox="06-rejkyavik" href="img/main/mdf/06-rejkyavik/7.JPG" title="Империя Пленка 2">
+                    <img data-src="img/main/mdf/06-rejkyavik/7.JPG" alt="Империя Пленка 2">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Женева -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Женева</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/1.JPG" title="Массив Classic White">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/massiv/14-jeneva/1.JPG" alt="Массив Classic White">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/2.JPG" title="Массив Classic White">
+                    <img data-src="img/main/massiv/14-jeneva/2.JPG" alt="Массив Classic White">
+                  </a>
+                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/3.JPG" title="Массив Classic White">
+                    <img data-src="img/main/massiv/14-jeneva/3.JPG" alt="Массив Classic White">
+                  </a>
+                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/4.JPG" title="Массив Classic White">
+                    <img data-src="img/main/massiv/14-jeneva/4.JPG" alt="Массив Classic White">
+                  </a>
+                  <a class="fancybox" data-fancybox="14-jeneva" href="img/main/massiv/14-jeneva/5.JPG" title="Массив Classic White">
+                    <img data-src="img/main/massiv/14-jeneva/5.JPG" alt="Массив Classic White">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>39 650 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Марсель -->
+        <li class="main__item mdf classic">
+          <article class="item">
+            <h2 class="item__title">Марсель</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="07-marsel" href="img/main/mdf/07-marsel/1.JPG" title="МДФ Прованс">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/07-marsel/1.JPG" alt="МДФ Прованс">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="07-marsel" href="img/main/mdf/07-marsel/2.JPG" title="МДФ Прованс">
+                    <img data-src="img/main/mdf/07-marsel/2.JPG" alt="МДФ Прованс">
+                  </a>
+                  <a class="fancybox" data-fancybox="07-marsel" href="img/main/mdf/07-marsel/3.JPG" title="МДФ Прованс">
+                    <img data-src="img/main/mdf/07-marsel/3.JPG" alt="МДФ Прованс">
+                  </a>
+                  <a class="fancybox" data-fancybox="07-marsel" href="img/main/mdf/07-marsel/4.JPG" title="МДФ Прованс">
+                    <img data-src="img/main/mdf/07-marsel/4.JPG" alt="МДФ Прованс">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Дюссельдорф -->
+        <li class="main__item mdf modern">
+          <article class="item">
+            <h2 class="item__title">Дюссельдорф</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="09-dusseldorf" href="img/main/mdf/09-dusseldorf/1.JPG" title="МДФ Vanila">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/09-dusseldorf/1.JPG" alt="МДФ Vanila">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="09-dusseldorf" href="img/main/mdf/09-dusseldorf/2.JPG" title="МДФ Vanila">
+                  <img data-src="img/main/mdf/09-dusseldorf/2.JPG" alt="МДФ Vanila">
+                </a>
+                <a class="fancybox" data-fancybox="09-dusseldorf" href="img/main/mdf/09-dusseldorf/3.JPG" title="МДФ Vanila">
+                  <img data-src="img/main/mdf/09-dusseldorf/3.JPG" alt="МДФ Vanila">
+                </a>
+                <a class="fancybox" data-fancybox="09-dusseldorf" href="img/main/mdf/09-dusseldorf/4.JPG" title="МДФ Vanila">
+                  <img data-src="img/main/mdf/09-dusseldorf/4.JPG" alt="МДФ Vanila">
+                </a>
+                <a class="fancybox" data-fancybox="09-dusseldorf" href="img/main/mdf/09-dusseldorf/5.JPG" title="МДФ Vanila">
+                  <img data-src="img/main/mdf/09-dusseldorf/5.JPG" alt="МДФ Vanila">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Ваниль</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Бергонци -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Бергонци</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/1.jpg" title="Дуб Bergonzi Beige gold">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/massiv/08-bergonci/1.jpg" alt="Дуб Bergonzi Beige gold">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/2.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/2.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/3.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/3.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/4.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/4.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/5.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/5.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="08-bergonci" href="img/main/massiv/08-bergonci/6.jpg" title="Дуб Bergonzi Beige gold">
+                    <img data-src="img/main/massiv/08-bergonci/6.jpg" alt="Дуб Bergonzi Beige gold">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 950 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Коста-Рика -->
+        <li class="main__item mdf modern">
+          <article class="item">
+            <h2 class="item__title">Коста-Рика</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="11-kosta-rika" href="img/main/mdf/11-kosta-rika/1.JPG" title="МДФ Modern Yellow">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/11-kosta-rika/1.JPG" alt="МДФ Modern Yellow">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="11-kosta-rika" href="img/main/mdf/11-kosta-rika/2.JPG" title="МДФ Modern Yellow">
+                  <img data-src="img/main/mdf/11-kosta-rika/2.JPG" alt="МДФ Modern Yellow">
+                </a>
+                <a class="fancybox" data-fancybox="11-kosta-rika" href="img/main/mdf/11-kosta-rika/3.JPG" title="МДФ Modern Yellow">
+                  <img data-src="img/main/mdf/11-kosta-rika/3.JPG" alt="МДФ Modern Yellow">
+                </a>
+                <a class="fancybox" data-fancybox="11-kosta-rika" href="img/main/mdf/11-kosta-rika/4.JPG" title="МДФ Modern Yellow">
+                  <img data-src="img/main/mdf/11-kosta-rika/4.JPG" alt="МДФ Modern Yellow">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Желтый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Прага -->
+        <li class="main__item mdf classic">
+          <article class="item">
+            <h2 class="item__title">Прага</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="13-praga" href="img/main/mdf/13-praga/1.JPG" title="МДФ с патиной">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/13-praga/1.JPG" alt="МДФ с патиной">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="13-praga" href="img/main/mdf/13-praga/2.JPG" title="МДФ с патиной">
+                  <img data-src="img/main/mdf/13-praga/2.JPG" alt="МДФ с патиной">
+                </a>
+                <a class="fancybox" data-fancybox="13-praga" href="img/main/mdf/13-praga/3.JPG" title="МДФ с патиной">
+                  <img data-src="img/main/mdf/13-praga/3.JPG" alt="МДФ с патиной">
+                </a>
+                <a class="fancybox" data-fancybox="13-praga" href="img/main/mdf/13-praga/4.JPG" title="МДФ с патиной">
+                  <img data-src="img/main/mdf/13-praga/4.JPG" alt="МДФ с патиной">
+                </a>
+                <a class="fancybox" data-fancybox="13-praga" href="img/main/mdf/13-praga/5.JPG" title="МДФ с патиной">
+                  <img data-src="img/main/mdf/13-praga/5.JPG" alt="МДФ с патиной">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ с патиной</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Цюрих -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Цюрих</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/1.jpg" title="Дуб Ruggeri White+T9">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/massiv/07-curih/1.jpg" alt="Дуб Ruggeri White+T9">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/2.jpg" title="Дуб Ruggeri White+T9">
+                    <img data-src="img/main/massiv/07-curih/2.jpg" alt="Дуб Ruggeri White+T9">
+                  </a>
+                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/3.jpg" title="Дуб Ruggeri White+T9">
+                    <img data-src="img/main/massiv/07-curih/3.jpg" alt="Дуб Ruggeri White+T9">
+                  </a>
+                  <a class="fancybox" data-fancybox="07-curih" href="img/main/massiv/07-curih/4.jpg" title="Дуб Ruggeri White+T9">
+                    <img data-src="img/main/massiv/07-curih/4.jpg" alt="Дуб Ruggeri White+T9">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Шоколад</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Флоренция -->
+        <li class="main__item mdf modern">
+          <article class="item">
+            <h2 class="item__title">Флоренция</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="21-florencia" href="img/main/mdf/21-florencia/1.JPG" title="Флоренция">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/21-florencia/1.JPG" alt="Флоренция">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="21-florencia" href="img/main/mdf/21-florencia/2.JPG" title="Флоренция">
+                  <img data-src="img/main/mdf/21-florencia/2.JPG" alt="Флоренция">
+                </a>
+                <a class="fancybox" data-fancybox="21-florencia" href="img/main/mdf/21-florencia/3.JPG" title="Флоренция">
+                  <img data-src="img/main/mdf/21-florencia/3.JPG" alt="Флоренция">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Кофе с молоком</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>15 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Дели -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Дели</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/1.JPG" title="Зеленый дуб с патиной серебро">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/massiv/04-deli/1.JPG" alt="Зеленый дуб с патиной серебро">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/2.JPG" title="Зеленый дуб с патиной серебро">
+                    <img data-src="img/main/massiv/04-deli/2.JPG" alt="Зеленый дуб с патиной серебро">
+                  </a>
+                  <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/3.JPG" title="Зеленый дуб с патиной серебро">
+                    <img data-src="img/main/massiv/04-deli/3.JPG" alt="Зеленый дуб с патиной серебро">
+                  </a>
+                  <a class="fancybox" data-fancybox="04-deli" href="img/main/massiv/04-deli/4.JPG" title="Зеленый дуб с патиной серебро">
+                    <img data-src="img/main/massiv/04-deli/4.JPG" alt="Зеленый дуб с патиной серебро">
+                  </a>
+              </div>
+
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Зеленый дуб с патиной</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>39 650 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Амстердам -->
+        <li class="main__item emal modern">
+          <article class="item">
+            <h2 class="item__title">Амстердам</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/1.jpg" title="Devonshir">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/emal/01-amsterdam/1.jpg" alt="Devonshir">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/2.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/2.jpg" alt="Devonshir">
+                </a>
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/3.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/3.jpg" alt="Devonshir">
+                </a>
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/4.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/4.jpg" alt="Devonshir">
+                </a>
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/5.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/5.jpg" alt="Devonshir">
+                </a>
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/6.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/6.jpg" alt="Devonshir">
+                </a>
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/7.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/7.jpg" alt="Devonshir">
+                </a>
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/8.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/8.jpg" alt="Devonshir">
+                </a>
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/9.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/9.jpg" alt="Devonshir">
+                </a>
+                <a class="fancybox" data-fancybox="01-amsterdam" href="img/main/emal/01-amsterdam/10.jpg" title="Devonshir">
+                  <img data-src="img/main/emal/01-amsterdam/10.jpg" alt="Devonshir">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Эмаль</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Синий</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>26 650 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Эдеса -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Эдеса</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/1.jpg" title="Дуб Bergonzi beige gold">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/massiv/13-edesa/1.jpg" alt="Дуб Bergonzi beige gold">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/2.jpg" title="Дуб Bergonzi beige gold">
+                    <img data-src="img/main/massiv/13-edesa/2.jpg" alt="Дуб Bergonzi beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/3.jpg" title="Дуб Bergonzi beige gold">
+                    <img data-src="img/main/massiv/13-edesa/3.jpg" alt="Дуб Bergonzi beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/4.jpg" title="Дуб Bergonzi beige gold">
+                    <img data-src="img/main/massiv/13-edesa/4.jpg" alt="Дуб Bergonzi beige gold">
+                  </a>
+                  <a class="fancybox" data-fancybox="13-edesa" href="img/main/massiv/13-edesa/5.jpg" title="Дуб Bergonzi beige gold">
+                    <img data-src="img/main/massiv/13-edesa/5.jpg" alt="Дуб Bergonzi beige gold">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Белый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>41 925 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Брюссель -->
+        <li class="main__item emal modern">
+          <article class="item">
+            <h2 class="item__title">Брюссель</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="02-brussel" href="img/main/emal/02-brussel/1.JPG" title="Эмаль Black Glossy">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/emal/02-brussel/1.JPG" alt="Эмаль Black Glossy">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="02-brussel" href="img/main/emal/02-brussel/2.JPG" title="Эмаль Black Glossy">
+                  <img data-src="img/main/emal/02-brussel/2.JPG" alt="Эмаль Black Glossy">
+                </a>
+                <a class="fancybox" data-fancybox="02-brussel" href="img/main/emal/02-brussel/3.JPG" title="Эмаль Black Glossy">
+                  <img data-src="img/main/emal/02-brussel/3.JPG" alt="Эмаль Black Glossy">
+                </a>
+                <a class="fancybox" data-fancybox="02-brussel" href="img/main/emal/02-brussel/4.JPG" title="Эмаль Black Glossy">
+                  <img data-src="img/main/emal/02-brussel/4.JPG" alt="Эмаль Black Glossy">
+                </a>
+                <a class="fancybox" data-fancybox="02-brussel" href="img/main/emal/02-brussel/5.JPG" title="Эмаль Black Glossy">
+                  <img data-src="img/main/emal/02-brussel/5.JPG" alt="Эмаль Black Glossy">
+                </a>
+                <a class="fancybox" data-fancybox="02-brussel" href="img/main/emal/02-brussel/6.JPG" title="Эмаль Black Glossy">
+                  <img data-src="img/main/emal/02-brussel/6.JPG" alt="Эмаль Black Glossy">
+                </a>
+                <a class="fancybox" data-fancybox="02-brussel" href="img/main/emal/02-brussel/7.JPG" title="Эмаль Black Glossy">
+                  <img data-src="img/main/emal/02-brussel/7.JPG" alt="Эмаль Black Glossy">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Эмаль</span></p>
+                <p class="descr__material">Стиль:<span>Модерн</span></p>
+                <p class="descr__material">Цвет:<span>Черный</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>21 790 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Равелло -->
+        <li class="main__item massiv classic">
+          <article class="item">
+            <h2 class="item__title">Равелло</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/1.jpg" title="Массив Фисташка">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img  class="item__image"  data-src="img/main/massiv/02-ravello/1.jpg" alt="Массив Фисташка">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/2.jpg" title="Массив Фисташка">
+                    <img data-src="img/main/massiv/02-ravello/2.jpg" alt="Массив Фисташка">
+                  </a>
+                  <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/3.jpg" title="Массив Фисташка">
+                    <img data-src="img/main/massiv/02-ravello/3.jpg" alt="Массив Фисташка">
+                  </a>
+                  <a class="fancybox" data-fancybox="02-ravello" href="img/main/massiv/02-ravello/4.jpg" title="Массив Фисташка">
+                    <img data-src="img/main/massiv/02-ravello/4.jpg" alt="Массив Фисташка">
+                  </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>Дуб</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Фисташковый</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>39 650 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
+        <!-- Валенсия -->
         <li class="main__item plastic modern">
           <article class="item">
             <h2 class="item__title">Валенсия</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="03-valencia" href="img/main/plastic/03-valencia/1.JPG" title="Џластик ‡абрано">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/plastic/03-valencia/1.JPG" alt="Џластик ‡абрано">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="03-valencia" href="img/main/plastic/03-valencia/2.JPG" title="Џластик ‡абрано">
@@ -717,41 +1376,62 @@
                 <p class="descr__material">Материал:<span>Пластик</span></p>
                 <p class="descr__material">Стиль:<span>Модерн</span></p>
                 <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>16 350 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
-        <li class="main__item plastic modern">
+        <!-- Копенгаген -->
+        <li class="main__item massiv classic">
           <article class="item">
-            <h2 class="item__title">Люцерн</h2>
+            <h2 class="item__title">Копенгаген</h2>
             <div class="item__images ">
-              <a class="fancybox" data-fancybox="04-lucern" href="img/main/plastic/04-lucern/1.jpg" title="Пластик Коффе">
-                <img class="item__image" data-src="img/main/plastic/04-lucern/1.jpg" alt="Пластик Коффе">
+              <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/1.jpg" title="Дуб Diana Exp Beige">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/massiv/10-kopengagen/1.jpg" alt="Дуб Diana Exp Beige">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
+              <div class="hidden">
+                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/2.jpg" title="Дуб Diana Exp Beige">
+                    <img data-src="img/main/massiv/10-kopengagen/2.jpg" alt="Дуб Diana Exp Beige">
+                  </a>
+                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/3.jpg" title="Дуб Diana Exp Beige">
+                    <img data-src="img/main/massiv/10-kopengagen/3.jpg" alt="Дуб Diana Exp Beige">
+                  </a>
+                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/4.jpg" title="Дуб Diana Exp Beige">
+                    <img data-src="img/main/massiv/10-kopengagen/4.jpg" alt="Дуб Diana Exp Beige">
+                  </a>
+                  <a class="fancybox" data-fancybox="10-kopengagen" href="img/main/massiv/10-kopengagen/5.jpg" title="Дуб Diana Exp Beige">
+                    <img data-src="img/main/massiv/10-kopengagen/5.jpg" alt="Дуб Diana Exp Beige">
+                  </a>
+
+              </div>
             </div>
             <div class="item__descr">
               <div class="descr__left">
-                <p class="descr__material">Материал:<span>Пластик</span></p>
-                <p class="descr__material">Стиль:<span>Модерн</span></p>
-                <p class="descr__material">Цвет:<span>Шоколадный</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <p class="descr__material">Материал:<span>Массив</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Черный</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
-              <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <p class="descr__price">Цена за метр:<span>41 970 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
+        <!-- Анталья -->
         <li class="main__item plastic modern">
           <article class="item">
             <h2 class="item__title">Анталья</h2>
             <div class="item__images ">
               <a class="fancybox" data-fancybox="08-antalya" href="img/main/plastic/08-antalya/1.jpg" title="Анталья">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
                 <img class="item__image" data-src="img/main/plastic/08-antalya/1.jpg" alt="Анталья">
                 <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
               </a>
               <div class="hidden">
                   <a class="fancybox" data-fancybox="08-antalya" href="img/main/plastic/08-antalya/2.jpg" title="Анталья">
@@ -764,14 +1444,57 @@
                 <p class="descr__material">Материал:<span>Пластик</span></p>
                 <p class="descr__material">Стиль:<span>Модерн</span></p>
                 <p class="descr__material">Цвет:<span>Белый</span></p>
-                <p class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
               </div>
               <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
-              <button class="descr__order">Заказать рассчет</button>
+              <button class="descr__order">Заказать расчет</button>
             </div>
           </article>
         </li>
-
+        <!-- Барселона -->
+        <li class="main__item mdf classic">
+          <article class="item">
+            <h2 class="item__title">Барселона</h2>
+            <div class="item__images ">
+              <a class="fancybox" data-fancybox="18-barselona" href="img/main/mdf/18-barselona/1.JPG" title="МДФ с патиной Орех">
+                <span class="loading">Секунду, сейчас все загрузим...</span>
+                <img class="item__image" data-src="img/main/mdf/18-barselona/1.JPG" alt="МДФ с патиной Орех">
+                <div class="item__zoom-in"></div>
+                <div class="item__shots">Смотреть&nbsp;<span></span>&nbsp;фото</div>
+              </a>
+              <div class="hidden">
+                <a class="fancybox" data-fancybox="18-barselona" href="img/main/mdf/18-barselona/2.JPG" title="МДФ с патиной Орех">
+                  <img data-src="img/main/mdf/18-barselona/2.JPG" alt="МДФ с патиной Орех">
+                </a>
+                <a class="fancybox" data-fancybox="18-barselona" href="img/main/mdf/18-barselona/3.JPG" title="МДФ с патиной Орех">
+                  <img data-src="img/main/mdf/18-barselona/3.JPG" alt="МДФ с патиной Орех">
+                </a>
+                <a class="fancybox" data-fancybox="18-barselona" href="img/main/mdf/18-barselona/4.JPG" title="МДФ с патиной Орех">
+                  <img data-src="img/main/mdf/18-barselona/4.JPG" alt="МДФ с патиной Орех">
+                </a>
+                <a class="fancybox" data-fancybox="18-barselona" href="img/main/mdf/18-barselona/5.JPG" title="МДФ с патиной Орех">
+                  <img data-src="img/main/mdf/18-barselona/5.JPG" alt="МДФ с патиной Орех">
+                </a>
+                <a class="fancybox" data-fancybox="18-barselona" href="img/main/mdf/18-barselona/6.JPG" title="МДФ с патиной Орех">
+                  <img data-src="img/main/mdf/18-barselona/6.JPG" alt="МДФ с патиной Орех">
+                </a>
+                <a class="fancybox" data-fancybox="18-barselona" href="img/main/mdf/18-barselona/7.JPG" title="МДФ с патиной Орех">
+                  <img data-src="img/main/mdf/18-barselona/7.JPG" alt="МДФ с патиной Орех">
+                </a>
+              </div>
+            </div>
+            <div class="item__descr">
+              <div class="descr__left">
+                <p class="descr__material">Материал:<span>пленка МДФ с патиной Орех</span></p>
+                <p class="descr__material">Стиль:<span>Классика</span></p>
+                <p class="descr__material">Цвет:<span>Кофе с молоком</span></p>
+                <!-- <span class="descr__size">Размер на фото:<span>Маленькая - 3м, большая - 6м</span></p> -->
+              </div>
+              <p class="descr__price">Цена за метр:<span>18 750 Р</span></p>
+              <button class="descr__order">Заказать расчет</button>
+            </div>
+          </article>
+        </li>
         <li class="main__item add">
           <article class="add add--5">
             <h2 class="add__title">Более 300 наименований фурнитуры</h2>
@@ -891,7 +1614,9 @@
 
   <section class="contacts">
     <div class="container">
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dda5f41cbfd75a3bced1918daca6efc1088631d77b9c567f8011c841078ec18&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Адреса выставочных салонов</h2>
         <ul class="contacts__list">
@@ -928,7 +1653,7 @@
         <h2 class="contacts__title contacts__title--production">Адрес производства</h2>
         <ul class="contacts__list">
             <li class="contacts__item">
-              <span class="contacts__address">Томилино, Новорязанское шоссе, с. 29</span>
+              <span class="contacts__address">Томилино, Новорязанское шоссе, с.&nbsp;29</span>
             </li>
         </ul>
       </div>
@@ -954,9 +1679,21 @@
     </div>
   </footer>
 
+  <section class="popup-callback hidden" id="callback">
+    <form method="post" action="callback.php" class="popup-callback__form">
+      <p class="popup-callback__title">Остались вопросы? Оставьте свой номер и мы с Вами свяжемся!</p>
+      <label class="visually-hidden" for="callback-name">Введите Ваше имя</label>
+      <input class="popup-callback__input" type="text" name="name" id="callback-name" placeholder="Ваше имя" required>
+      <label class="visually-hidden" for="callback-phone">Введите Ваш номер телефона</label>
+      <input class="popup-callback__input" type="tel" name="phone" placeholder="Номер телефона" id="callback-phone" required>
+      <input class="popup-callback__button" type="submit" value="Заказать звонок">
+    </form>
+  </section>
+
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/blazy.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

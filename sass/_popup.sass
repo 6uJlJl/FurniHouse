@@ -1,0 +1,88 @@
+
+
+
+.popup-callback
+  width: 350px
+  &__title
+    text-align: center;
+    +medium
+    font-size: 25px;
+    line-height: 39px;
+  &__input
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    +normal
+    width: 100%
+    font-size: 18px;
+    line-height: 21px;
+    padding: 15px 19px
+    height: 51px;
+    color: #A9A9A9;
+    margin-bottom: 24px
+    border-radius: 0px
+  &__textarea
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    +normal
+    width: 100%
+    max-width: 100%
+    min-width: 100%
+    font-size: 18px;
+    line-height: 21px;
+    padding: 15px 19px
+    height: 51px;
+    color: #A9A9A9;
+    margin-bottom: 24px
+  &__button
+    text-align: center
+    width: 100%
+    margin-top: 16px
+    height: 54px;
+    background: #3dba29;
+    +normal
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none
+    cursor: pointer
+    &:hover,
+    &:focus
+      background-color: #30981f
+
+.popup-calc
+  width: 350px
+
+@media (max-width: 576px)
+  .popup-calc
+    width: 100%
+    max-width: 300px
+  .popup-callback
+    width: 100%
+    max-width: 300px
+    padding: 0px
+    &__title
+      font-size: 18px;
+      line-height: 30px;
+    &__input
+      font-size: 16px
+    &__button
+      font-size: 18px
+
+.after-send
+  width: 100wv
+  height: 100wh
+  display: flex
+  justify-content: center
+  align-items: center
+  p
+    max-width: 50%
+    +medium
+    font-size: 23px
+    line-height: 30px
+
+@media (max-width: 576px)
+  .after-send
+    width: 100%
+    p
+      font-size: 18px
+      line-height: 24px
